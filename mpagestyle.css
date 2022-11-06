@@ -76,6 +76,7 @@
         .footer{
             text-align: center;
             width: 100%;
-            white-space: pre;
+            height: auto;
+            margin-top: 0px;
         }
     }
