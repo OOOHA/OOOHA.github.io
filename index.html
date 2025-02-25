@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>建置中</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+    }
+    .language-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .language-toggle button {
+      margin-left: 5px;
+      padding: 5px 10px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: #1e1e1e;
+      border: none;
+      color: #fff;
+    }
+    .message {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .time {
+      font-size: 5em;
+      font-weight: bold;
+    }
+    .date {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+    .back-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .back-button button {
+      padding: 5px 10px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: #1e1e1e;
+      border: none;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-toggle">
+    <button onclick="setLanguage('zh')">中文</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
+  
+  <div class="message" id="message"></div>
+  <div class="time" id="time"></div>
+  <div class="date" id="date"></div>
+  
+  <div class="back-button">
+    <a href="https://www.google.com" target="_blank">
+      <button>Google</button>
+    </a>
+  </div>
+
+  <script>
+    let currentLanguage = 'zh';
+    const texts = {
+      zh: {
+        message: "這個網頁剛開始製作中",
+        formatDate: function(date) {
+          const year = date.getFullYear();
+          const month = (date.getMonth() + 1).toString().padStart(2, '0');
+          const day = date.getDate().toString().padStart(2, '0');
+          return `${year}年${month}月${day}日`;
+        }
+      },
+      en: {
+        message: "This webpage is under construction",
+        formatDate: function(date) {
+          const year = date.getFullYear();
+          const month = (date.getMonth() + 1).toString().padStart(2, '0');
+          const day = date.getDate().toString().padStart(2, '0');
+          return `${year}-${month}-${day}`;
+        }
+      }
+    };
+
+    function setLanguage(lang) {
+      currentLanguage = lang;
+      document.getElementById('message').textContent = texts[lang].message;
+      updateTime();
+    }
+    
+    function updateTime() {
+      const now = new Date();
+      let hours = now.getHours();
+      let period = "AM";
+      if (hours >= 12) {
+        period = "PM";
+        if (hours > 12) {
+          hours = hours - 12;
+        }
+      }
+      if (hours === 0) {
+        hours = 12;
+      }
+      const formattedHours = hours.toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      document.getElementById('time').textContent = `${formattedHours}:${minutes}:${seconds} ${period}`;
+      
+      document.getElementById('date').textContent = texts[currentLanguage].formatDate(now);
+    }
+    
+    // 初始設置與每秒更新
+    setLanguage(currentLanguage);
+    updateTime();
+    setInterval(updateTime, 1000);
+  </script>
+</body>
+</html>
