@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "apps": "Applications"
+  },
+  "footer": {
+    "copyright": "© {{year}} OOOHA. Tous droits réservés.",
+    "builtWith": "Conçu avec amour pour iOS",
+    "about": "À propos"
+  },
+  "feedback": {
+    "title": "Retour d'expérience",
+    "subtitle": "Aidez-moi à m'améliorer",
+    "bugReport": "Signaler un bug",
+    "featureRequest": "Proposer une fonctionnalité",
+    "bugDescription": "Vous avez trouvé un problème ? Faites-le moi savoir pour que je puisse le corriger.",
+    "featureDescription": "Vous avez une idée ? J'aimerais entendre vos suggestions.",
+    "githubNote": "Vous serez redirigé vers GitHub pour soumettre votre retour.",
+    "formButton": "Envoyer",
+    "formNoAccount": "Aucun compte nécessaire",
+    "formType": "Type",
+    "formTypeBug": "Rapport de bug",
+    "formTypeFeature": "Demande de fonctionnalité",
+    "formTitle": "Titre",
+    "formTitlePlaceholder": "Résumé bref du problème ou de l'idée",
+    "formDescription": "Description",
+    "formDescriptionPlaceholder": "Veuillez fournir des détails...",
+    "formSubmit": "Envoyer",
+    "formSubmitting": "Envoi en cours...",
+    "formSuccess": "Merci ! Votre retour a été soumis.",
+    "formError": "Échec de l'envoi. Veuillez réessayer.",
+    "formClose": "Fermer",
+    "orGithub": "Ou via GitHub (compte requis)",
+    "preferGithub": "Vous préférez GitHub ? Soumettez ici →",
+    "logAttachment": "Fichier log",
+    "logOptional": "facultatif",
+    "logSelect": "Joindre un fichier log (.log, .txt, .json, .crash)",
+    "logHint": "Max 50 Ko. Le contenu du fichier sera inclus dans le rapport.",
+    "logTooLarge": "Fichier trop volumineux. Taille maximale : 50 Ko.",
+    "logReadError": "Impossible de lire le fichier."
+  },
+  "appStore": "Télécharger sur l'App Store",
+  "features": "Fonctionnalités",
+  "guide": "Guide d'utilisation",
+  "learnMore": "En savoir plus",
+  "mozii": {
+    "name": "mozii",
+    "tagline": "Écoutez vos fichiers musicaux avec style",
+    "description": "Un lecteur de musique basé sur les fichiers avec traduction de paroles, paroles animées et personnalisation infinie — le tout dans un design épuré et minimaliste.",
+    "features": {
+      "playback": {
+        "title": "Traduction et animation des paroles",
+        "description": "Consultez les paroles traduites en temps réel et profitez de paroles magnifiquement animées synchronisées avec votre musique."
+      },
+      "library": {
+        "title": "Design minimaliste",
+        "description": "Une interface propre et simple qui reste discrète et vous laisse vous concentrer sur votre musique."
+      },
+      "ui": {
+        "title": "Entièrement personnalisable",
+        "description": "Personnalisez votre expérience avec de nombreux réglages — thèmes, dispositions, comportements de lecture, et plus encore."
+      }
+    },
+    "guide": {
+      "step1": "Ajoutez vos fichiers musicaux à mozii et commencez à parcourir votre bibliothèque.",
+      "step2": "Appuyez sur un morceau pour le lire et profitez des paroles animées avec traduction.",
+      "step3": "Explorez les paramètres pour personnaliser l'interface et la lecture selon vos préférences."
+    }
+  },
+  "mapMemory": {
+    "name": "Map Memory",
+    "tagline": "Souvenez-vous de chaque endroit visité",
+    "description": "Enregistre automatiquement votre historique de localisation, comme une chronologie personnelle de votre vie.",
+    "features": {
+      "timeline": {
+        "title": "Chronologie des lieux",
+        "description": "Consultez vos emplacements passés sur une chronologie interactive, similaire à la chronologie Google Maps."
+      },
+      "map": {
+        "title": "Vue carte",
+        "description": "Visualisez tous vos lieux visités sur une belle carte interactive."
+      },
+      "privacy": {
+        "title": "Confidentialité d'abord",
+        "description": "Toutes les données restent sur votre appareil. Votre historique de localisation n'appartient qu'à vous."
+      }
+    },
+    "guide": {
+      "step1": "Accordez les autorisations de localisation et laissez Map Memory commencer l'enregistrement en arrière-plan.",
+      "step2": "Consultez votre chronologie à tout moment pour voir où vous êtes allé au cours de la journée.",
+      "step3": "Parcourez la vue carte pour explorer tous les endroits que vous avez visités au fil du temps."
+    }
+  },
+  "gphones": {
+    "name": "GPhones",
+    "tagline": "Vitesse GPS à portée de main",
+    "description": "Mesurez votre vitesse en temps réel grâce au GPS et conservez un historique détaillé de chaque trajet.",
+    "features": {
+      "speed": {
+        "title": "Vitesse en temps réel",
+        "description": "Obtenez des mesures de vitesse précises basées sur le GPS, affichées dans un format clair et lisible."
+      },
+      "tracking": {
+        "title": "Enregistrement de trajet",
+        "description": "Enregistrez l'intégralité de votre trajet avec des données de vitesse détaillées."
+      },
+      "history": {
+        "title": "Historique de vitesse",
+        "description": "Revoyez vos trajets passés avec des graphiques de vitesse, vitesse maximale, moyenne et distance."
+      }
+    },
+    "guide": {
+      "step1": "Ouvrez GPhones et accordez les autorisations GPS pour des mesures de vitesse précises.",
+      "step2": "Démarrez un enregistrement de trajet pour capturer votre vitesse tout au long du voyage.",
+      "step3": "Consultez votre historique de trajets avec des graphiques de vitesse détaillés et des statistiques."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Des applications conçues avec soin",
+      "subtitle": "Je crée des applications iOS simples, élégantes et utiles."
+    },
+    "appsSection": {
+      "title": "Mes applications",
+      "subtitle": "Découvrez ce que j'ai créé"
+    }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas.",
+    "backHome": "Retour à l'accueil"
+  },
+  "about": {
+    "title": "À propos",
+    "education": "M.S. en informatique, Temple University (2023–2025)"
+  },
+  "jobOffer": {
+    "button": "Proposer un emploi",
+    "title": "Offre d'emploi",
+    "email": "E-mail",
+    "emailPlaceholder": "votre@email.com",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "company": "Entreprise",
+    "companyPlaceholder": "Nom de l'entreprise",
+    "position": "Poste",
+    "positionPlaceholder": "ex. Développeur iOS",
+    "workType": "Type",
+    "workTypeFullTime": "Temps plein",
+    "workTypePartTime": "Temps partiel",
+    "workTypeContract": "Contrat",
+    "message": "Message",
+    "messagePlaceholder": "Parlez-moi de l'opportunité...",
+    "submit": "Envoyer",
+    "submitting": "Envoi en cours...",
+    "success": "Merci ! Je vous répondrai bientôt.",
+    "error": "Échec de l'envoi. Veuillez réessayer.",
+    "close": "Fermer",
+    "optional": "facultatif"
+  }
+}

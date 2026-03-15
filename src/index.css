@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --color-mozii: #8b5cf6;
+  --color-mozii-light: #a78bfa;
+  --color-mapmemory: #3b82f6;
+  --color-mapmemory-light: #60a5fa;
+  --color-gphones: #10b981;
+  --color-gphones-light: #34d399;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

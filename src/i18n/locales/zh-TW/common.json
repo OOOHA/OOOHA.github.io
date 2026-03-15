@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "首頁",
+    "apps": "應用程式"
+  },
+  "footer": {
+    "copyright": "© {{year}} OOOHA. 保留所有權利。",
+    "builtWith": "為 iOS 用心打造",
+    "about": "關於"
+  },
+  "feedback": {
+    "title": "意見回饋",
+    "subtitle": "幫助我改進",
+    "bugReport": "回報 Bug",
+    "featureRequest": "功能建議",
+    "bugDescription": "發現了問題？請告訴我，我會盡快修復。",
+    "featureDescription": "有什麼想法？我很樂意聽取您的建議。",
+    "githubNote": "您將被導向 GitHub 提交您的回饋。",
+    "formButton": "提交回饋",
+    "formNoAccount": "不需要帳號",
+    "formType": "類型",
+    "formTypeBug": "Bug 回報",
+    "formTypeFeature": "功能建議",
+    "formTitle": "標題",
+    "formTitlePlaceholder": "簡短描述問題或想法",
+    "formDescription": "描述",
+    "formDescriptionPlaceholder": "請提供詳細資訊...",
+    "formSubmit": "提交",
+    "formSubmitting": "提交中...",
+    "formSuccess": "謝謝！您的回饋已成功提交。",
+    "formError": "提交失敗，請再試一次。",
+    "formClose": "關閉",
+    "orGithub": "或透過 GitHub（需要帳號）",
+    "preferGithub": "偏好用 GitHub？在這裡提交 \u2192",
+    "logAttachment": "Log 檔案",
+    "logOptional": "選填",
+    "logSelect": "附加 Log 檔案 (.log, .txt, .json, .crash)",
+    "logHint": "最大 50KB，檔案內容將包含在報告中。",
+    "logTooLarge": "檔案太大，最大限制為 50KB。",
+    "logReadError": "無法讀取檔案。"
+  },
+  "appStore": "在 App Store 下載",
+  "features": "功能特色",
+  "guide": "使用說明",
+  "learnMore": "了解更多",
+  "mozii": {
+    "name": "mozii",
+    "tagline": "以風格播放你的音樂檔案",
+    "description": "一款檔案式音樂播放器，支援歌詞翻譯、動態歌詞，擁有豐富的客製化選項，全部包裝在簡約的設計中。",
+    "features": {
+      "playback": {
+        "title": "歌詞翻譯 & 動態歌詞",
+        "description": "即時查看翻譯歌詞，享受與音樂同步的精美動態歌詞效果。"
+      },
+      "library": {
+        "title": "簡約設計",
+        "description": "乾淨簡潔的介面，不打擾你，讓你專注於音樂。"
+      },
+      "ui": {
+        "title": "高度客製化",
+        "description": "透過豐富的設定選項個人化你的體驗——主題、佈局、播放行為等。"
+      }
+    },
+    "guide": {
+      "step1": "將音樂檔案加入 mozii，開始瀏覽你的音樂庫。",
+      "step2": "點選曲目播放，享受動態歌詞和翻譯功能。",
+      "step3": "探索設定，客製化介面和播放方式。"
+    }
+  },
+  "mapMemory": {
+    "name": "Map Memory",
+    "tagline": "記住你去過的每個地方",
+    "description": "自動記錄您的位置歷史，就像您生活的個人時間軸。",
+    "features": {
+      "timeline": {
+        "title": "位置時間軸",
+        "description": "在互動式時間軸上查看您過去的位置紀錄，類似 Google 地圖的時間軸功能。"
+      },
+      "map": {
+        "title": "視覺化地圖",
+        "description": "在精美的互動式地圖上查看所有到訪過的地點。"
+      },
+      "privacy": {
+        "title": "隱私優先",
+        "description": "所有資料都保留在您的裝置上，您的位置紀錄完全屬於您。"
+      }
+    },
+    "guide": {
+      "step1": "授予定位權限，讓 Map Memory 開始在背景記錄。",
+      "step2": "隨時查看時間軸，了解一整天的行蹤。",
+      "step3": "瀏覽地圖檢視，探索您一路以來到訪過的所有地點。"
+    }
+  },
+  "gphones": {
+    "name": "GPhones",
+    "tagline": "GPS 驅動的即時速度",
+    "description": "使用 GPS 測量即時速度，並詳細記錄每段旅程。",
+    "features": {
+      "speed": {
+        "title": "即時速度",
+        "description": "獲取精準的 GPS 速度讀數，以清晰易讀的格式顯示。"
+      },
+      "tracking": {
+        "title": "旅程記錄",
+        "description": "記錄整段旅程，包含行進中的詳細速度數據。"
+      },
+      "history": {
+        "title": "速度歷史",
+        "description": "回顧過去的旅程，查看速度圖表、最高速度、平均速度和距離。"
+      }
+    },
+    "guide": {
+      "step1": "開啟 GPhones 並授予 GPS 權限以獲取精確的速度讀數。",
+      "step2": "開始旅程記錄，捕捉整段行程中的速度數據。",
+      "step3": "查看旅程歷史，包含詳細的速度圖表和統計資料。"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "用心打造的應用程式",
+      "subtitle": "我打造簡潔、美觀且實用的 iOS 應用程式。"
+    },
+    "appsSection": {
+      "title": "我的應用程式",
+      "subtitle": "探索我打造的作品"
+    }
+  },
+  "notFound": {
+    "title": "找不到頁面",
+    "description": "您尋找的頁面不存在。",
+    "backHome": "回到首頁"
+  },
+  "about": {
+    "title": "關於",
+    "education": "計算機與資訊科學碩士，天普大學 (2023–2025)"
+  },
+  "jobOffer": {
+    "button": "提供工作機會",
+    "title": "工作邀請",
+    "email": "電子郵件",
+    "emailPlaceholder": "your@email.com",
+    "name": "姓名",
+    "namePlaceholder": "您的姓名",
+    "company": "公司",
+    "companyPlaceholder": "公司名稱",
+    "position": "職位",
+    "positionPlaceholder": "例如 iOS 開發者",
+    "workType": "類型",
+    "workTypeFullTime": "全職",
+    "workTypePartTime": "兼職",
+    "workTypeContract": "合約",
+    "message": "訊息",
+    "messagePlaceholder": "請告訴我關於這個機會...",
+    "submit": "送出",
+    "submitting": "送出中...",
+    "success": "謝謝！我會盡快回覆您。",
+    "error": "送出失敗，請再試一次。",
+    "close": "關閉",
+    "optional": "選填"
+  }
+}

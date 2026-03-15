@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "Home",
+    "apps": "Apps"
+  },
+  "footer": {
+    "copyright": "© {{year}} OOOHA. All rights reserved.",
+    "builtWith": "Built with love for iOS",
+    "about": "About"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "subtitle": "Help me improve",
+    "bugReport": "Report a Bug",
+    "featureRequest": "Request a Feature",
+    "bugDescription": "Found something wrong? Let me know so I can fix it.",
+    "featureDescription": "Have an idea? I'd love to hear your suggestions.",
+    "githubNote": "You'll be redirected to GitHub to submit your feedback.",
+    "formButton": "Send Feedback",
+    "formNoAccount": "No account needed",
+    "formType": "Type",
+    "formTypeBug": "Bug Report",
+    "formTypeFeature": "Feature Request",
+    "formTitle": "Title",
+    "formTitlePlaceholder": "Brief summary of the issue or idea",
+    "formDescription": "Description",
+    "formDescriptionPlaceholder": "Please provide details...",
+    "formSubmit": "Submit",
+    "formSubmitting": "Submitting...",
+    "formSuccess": "Thank you! Your feedback has been submitted.",
+    "formError": "Failed to submit. Please try again.",
+    "formClose": "Close",
+    "orGithub": "Or via GitHub (account required)",
+    "preferGithub": "Prefer GitHub? Submit here \u2192",
+    "logAttachment": "Log file",
+    "logOptional": "optional",
+    "logSelect": "Attach a log file (.log, .txt, .json, .crash)",
+    "logHint": "Max 50KB. File content will be included in the report.",
+    "logTooLarge": "File too large. Maximum size is 50KB.",
+    "logReadError": "Failed to read file."
+  },
+  "appStore": "Download on the App Store",
+  "features": "Features",
+  "guide": "How to Use",
+  "learnMore": "Learn More",
+  "mozii": {
+    "name": "mozii",
+    "tagline": "Play your music files with style",
+    "description": "A file-based music player with lyrics translation, animated lyrics, and endless customization — all wrapped in a clean, minimal design.",
+    "features": {
+      "playback": {
+        "title": "Lyrics Translation & Animated Lyrics",
+        "description": "View translated lyrics in real time and enjoy beautifully animated lyrics that sync with your music."
+      },
+      "library": {
+        "title": "Minimal Design",
+        "description": "A clean, simple interface that stays out of your way and lets you focus on your music."
+      },
+      "ui": {
+        "title": "Fully Customizable",
+        "description": "Personalize your experience with extensive settings — themes, layouts, playback behaviors, and more."
+      }
+    },
+    "guide": {
+      "step1": "Add your music files to mozii and start browsing your library.",
+      "step2": "Tap a track to play and enjoy animated lyrics with translation support.",
+      "step3": "Explore settings to customize the interface and playback to your liking."
+    }
+  },
+  "mapMemory": {
+    "name": "Map Memory",
+    "tagline": "Remember every place you've been",
+    "description": "Automatically records your location history, like a personal timeline of your life.",
+    "features": {
+      "timeline": {
+        "title": "Location Timeline",
+        "description": "View your past locations on an interactive timeline, similar to Google Maps Timeline."
+      },
+      "map": {
+        "title": "Visual Map View",
+        "description": "See all your visited places plotted on a beautiful, interactive map."
+      },
+      "privacy": {
+        "title": "Privacy First",
+        "description": "All data stays on your device. Your location history is yours alone."
+      }
+    },
+    "guide": {
+      "step1": "Grant location permissions and let Map Memory start recording in the background.",
+      "step2": "Check your timeline anytime to see where you've been throughout the day.",
+      "step3": "Browse the map view to explore all the places you've visited over time."
+    }
+  },
+  "gphones": {
+    "name": "GPhones",
+    "tagline": "GPS-powered speed at your fingertips",
+    "description": "Measure your real-time speed using GPS and keep a detailed record of every trip.",
+    "features": {
+      "speed": {
+        "title": "Real-time Speed",
+        "description": "Get accurate, GPS-based speed readings displayed in a clean, easy-to-read format."
+      },
+      "tracking": {
+        "title": "Trip Recording",
+        "description": "Record your entire journey with detailed speed data throughout the trip."
+      },
+      "history": {
+        "title": "Speed History",
+        "description": "Review past trips with speed graphs, max speed, average speed, and distance."
+      }
+    },
+    "guide": {
+      "step1": "Open GPhones and grant GPS permissions for accurate speed readings.",
+      "step2": "Start a trip recording to capture your speed throughout the journey.",
+      "step3": "Review your trip history with detailed speed charts and statistics."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Apps crafted with care",
+      "subtitle": "I build iOS apps that are simple, beautiful, and useful."
+    },
+    "appsSection": {
+      "title": "My Apps",
+      "subtitle": "Discover what I've built"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist.",
+    "backHome": "Back to Home"
+  },
+  "about": {
+    "title": "About",
+    "education": "M.S. in Computer & Information Science, Temple University (2023–2025)"
+  },
+  "jobOffer": {
+    "button": "Offer a Job",
+    "title": "Job Offer",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "company": "Company",
+    "companyPlaceholder": "Company name",
+    "position": "Position",
+    "positionPlaceholder": "e.g. iOS Developer",
+    "workType": "Type",
+    "workTypeFullTime": "Full-time",
+    "workTypePartTime": "Part-time",
+    "workTypeContract": "Contract",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about the opportunity...",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Thank you! I'll get back to you soon.",
+    "error": "Failed to send. Please try again.",
+    "close": "Close",
+    "optional": "optional"
+  }
+}

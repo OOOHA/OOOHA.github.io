@@ -1,0 +1,74 @@
+name: Bug Report
+description: Report a bug in one of our apps
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      description: Which app is this bug related to?
+      options:
+        - mozii
+        - Map Memory
+        - GPhones
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS Version
+      description: What version of iOS are you running?
+      placeholder: e.g., 18.3
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App Version
+      description: What version of the app are you using?
+      placeholder: e.g., 1.2.0
+    validations:
+      required: false
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: What device are you using?
+      placeholder: e.g., iPhone 16 Pro
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the bug...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Tap on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen.
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: false

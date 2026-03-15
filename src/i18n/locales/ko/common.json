@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "홈",
+    "apps": "앱"
+  },
+  "footer": {
+    "copyright": "© {{year}} OOOHA. All rights reserved.",
+    "builtWith": "iOS를 위해 정성을 담아 만들었습니다",
+    "about": "소개"
+  },
+  "feedback": {
+    "title": "피드백",
+    "subtitle": "개선에 도움을 주세요",
+    "bugReport": "버그 신고",
+    "featureRequest": "기능 요청",
+    "bugDescription": "문제를 발견하셨나요? 알려주시면 제가 수정하겠습니다.",
+    "featureDescription": "아이디어가 있으신가요? 여러분의 제안을 듣고 싶습니다.",
+    "githubNote": "피드백을 제출하기 위해 GitHub으로 이동합니다.",
+    "formButton": "피드백 보내기",
+    "formNoAccount": "계정 불필요",
+    "formType": "유형",
+    "formTypeBug": "버그 신고",
+    "formTypeFeature": "기능 제안",
+    "formTitle": "제목",
+    "formTitlePlaceholder": "문제 또는 아이디어를 간략히 설명해 주세요",
+    "formDescription": "설명",
+    "formDescriptionPlaceholder": "자세한 내용을 입력해 주세요...",
+    "formSubmit": "제출",
+    "formSubmitting": "제출 중...",
+    "formSuccess": "감사합니다! 피드백이 제출되었습니다.",
+    "formError": "제출에 실패했습니다. 다시 시도해 주세요.",
+    "formClose": "닫기",
+    "orGithub": "또는 GitHub로 (계정 필요)",
+    "preferGithub": "GitHub을 선호하시나요? 여기서 제출 →",
+    "logAttachment": "로그 파일",
+    "logOptional": "선택사항",
+    "logSelect": "로그 파일 첨부 (.log, .txt, .json, .crash)",
+    "logHint": "최대 50KB. 파일 내용이 보고서에 포함됩니다.",
+    "logTooLarge": "파일이 너무 큽니다. 최대 크기는 50KB입니다.",
+    "logReadError": "파일을 읽을 수 없습니다."
+  },
+  "appStore": "App Store에서 다운로드",
+  "features": "기능",
+  "guide": "사용 방법",
+  "learnMore": "자세히 보기",
+  "mozii": {
+    "name": "mozii",
+    "tagline": "내 음악 파일을 스타일리시하게 재생",
+    "description": "파일 기반 음악 플레이어로, 가사 번역, 애니메이션 가사, 다양한 커스터마이징을 깔끔하고 미니멀한 디자인에 담았습니다.",
+    "features": {
+      "playback": {
+        "title": "가사 번역 & 애니메이션 가사",
+        "description": "실시간으로 번역된 가사를 확인하고, 음악에 맞춰 아름답게 움직이는 애니메이션 가사를 즐기세요."
+      },
+      "library": {
+        "title": "미니멀 디자인",
+        "description": "깔끔하고 심플한 인터페이스로 음악에만 집중할 수 있습니다."
+      },
+      "ui": {
+        "title": "완전한 커스터마이징",
+        "description": "테마, 레이아웃, 재생 설정 등 다양한 옵션으로 나만의 경험을 만들어 보세요."
+      }
+    },
+    "guide": {
+      "step1": "음악 파일을 mozii에 추가하고 라이브러리를 탐색해 보세요.",
+      "step2": "트랙을 탭하여 재생하고, 번역 지원이 포함된 애니메이션 가사를 즐기세요.",
+      "step3": "설정을 탐색하여 인터페이스와 재생 방식을 원하는 대로 커스터마이징하세요."
+    }
+  },
+  "mapMemory": {
+    "name": "Map Memory",
+    "tagline": "방문한 모든 장소를 기억하세요",
+    "description": "위치 기록을 자동으로 기록하여 일상의 타임라인을 만들어 줍니다.",
+    "features": {
+      "timeline": {
+        "title": "위치 타임라인",
+        "description": "Google 지도 타임라인과 유사한 인터랙티브 타임라인에서 과거 위치를 확인하세요."
+      },
+      "map": {
+        "title": "지도 보기",
+        "description": "방문한 모든 장소를 아름다운 인터랙티브 지도에서 확인하세요."
+      },
+      "privacy": {
+        "title": "개인정보 보호 우선",
+        "description": "모든 데이터는 기기에만 저장됩니다. 위치 기록은 오직 당신만의 것입니다."
+      }
+    },
+    "guide": {
+      "step1": "위치 권한을 허용하면 Map Memory가 백그라운드에서 기록을 시작합니다.",
+      "step2": "타임라인을 확인하여 하루 동안 어디를 방문했는지 확인하세요.",
+      "step3": "지도 보기에서 그동안 방문한 모든 장소를 탐색하세요."
+    }
+  },
+  "gphones": {
+    "name": "GPhones",
+    "tagline": "GPS 기반 속도를 손끝에서",
+    "description": "GPS를 이용하여 실시간 속도를 측정하고 모든 이동 기록을 상세히 저장합니다.",
+    "features": {
+      "speed": {
+        "title": "실시간 속도",
+        "description": "깔끔하고 읽기 쉬운 화면에서 정확한 GPS 기반 속도를 확인하세요."
+      },
+      "tracking": {
+        "title": "이동 기록",
+        "description": "이동 중 상세한 속도 데이터와 함께 전체 경로를 기록하세요."
+      },
+      "history": {
+        "title": "속도 기록",
+        "description": "속도 그래프, 최고 속도, 평균 속도, 거리 등 과거 이동 기록을 확인하세요."
+      }
+    },
+    "guide": {
+      "step1": "GPhones를 열고 정확한 속도 측정을 위해 GPS 권한을 허용하세요.",
+      "step2": "이동 기록을 시작하여 경로 전체의 속도를 기록하세요.",
+      "step3": "상세한 속도 차트와 통계로 이동 기록을 확인하세요."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "정성을 담아 만든 앱",
+      "subtitle": "심플하고 아름답고 유용한 iOS 앱을 만들고 있습니다."
+    },
+    "appsSection": {
+      "title": "나의 앱",
+      "subtitle": "제가 만든 앱을 만나보세요"
+    }
+  },
+  "notFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "description": "찾으시는 페이지가 존재하지 않습니다.",
+    "backHome": "홈으로 돌아가기"
+  },
+  "about": {
+    "title": "소개",
+    "education": "컴퓨터 및 정보과학 석사, 템플 대학교 (2023–2025)"
+  },
+  "jobOffer": {
+    "button": "채용 제안",
+    "title": "채용 제안",
+    "email": "이메일",
+    "emailPlaceholder": "your@email.com",
+    "name": "이름",
+    "namePlaceholder": "이름을 입력하세요",
+    "company": "회사",
+    "companyPlaceholder": "회사명",
+    "position": "직책",
+    "positionPlaceholder": "예: iOS 개발자",
+    "workType": "유형",
+    "workTypeFullTime": "정규직",
+    "workTypePartTime": "파트타임",
+    "workTypeContract": "계약직",
+    "message": "메시지",
+    "messagePlaceholder": "기회에 대해 알려주세요...",
+    "submit": "보내기",
+    "submitting": "보내는 중...",
+    "success": "감사합니다! 곧 연락드리겠습니다.",
+    "error": "전송에 실패했습니다. 다시 시도해주세요.",
+    "close": "닫기",
+    "optional": "선택사항"
+  }
+}

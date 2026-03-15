@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "apps": "アプリ"
+  },
+  "footer": {
+    "copyright": "© {{year}} OOOHA. All rights reserved.",
+    "builtWith": "iOSへの愛を込めて開発",
+    "about": "概要"
+  },
+  "feedback": {
+    "title": "フィードバック",
+    "subtitle": "改善にご協力ください",
+    "bugReport": "バグを報告する",
+    "featureRequest": "機能をリクエストする",
+    "bugDescription": "問題を見つけましたか？修正しますのでお知らせください。",
+    "featureDescription": "アイデアがありますか？ぜひお聞かせください。",
+    "githubNote": "フィードバックの送信のため、GitHubにリダイレクトされます。",
+    "formButton": "フィードバックを送信",
+    "formNoAccount": "アカウント不要",
+    "formType": "種類",
+    "formTypeBug": "バグ報告",
+    "formTypeFeature": "機能リクエスト",
+    "formTitle": "タイトル",
+    "formTitlePlaceholder": "問題やアイデアの簡単な説明",
+    "formDescription": "説明",
+    "formDescriptionPlaceholder": "詳細を入力してください...",
+    "formSubmit": "送信",
+    "formSubmitting": "送信中...",
+    "formSuccess": "ありがとうございます！フィードバックが送信されました。",
+    "formError": "送信に失敗しました。もう一度お試しください。",
+    "formClose": "閉じる",
+    "orGithub": "または GitHub から（アカウントが必要です）",
+    "preferGithub": "GitHub をご利用ですか？こちらから →",
+    "logAttachment": "ログファイル",
+    "logOptional": "任意",
+    "logSelect": "ログファイルを添付 (.log, .txt, .json, .crash)",
+    "logHint": "最大50KB。ファイル内容はレポートに含まれます。",
+    "logTooLarge": "ファイルが大きすぎます。最大サイズは50KBです。",
+    "logReadError": "ファイルの読み込みに失敗しました。"
+  },
+  "appStore": "App Storeからダウンロード",
+  "features": "機能",
+  "guide": "使い方",
+  "learnMore": "詳しく見る",
+  "mozii": {
+    "name": "mozii",
+    "tagline": "あなたの音楽ファイルをスタイリッシュに再生",
+    "description": "ファイルベースの音楽プレーヤー。歌詞翻訳、アニメーション歌詞、豊富なカスタマイズ機能を、クリーンでミニマルなデザインに凝縮しました。",
+    "features": {
+      "playback": {
+        "title": "歌詞翻訳とアニメーション歌詞",
+        "description": "リアルタイムで翻訳された歌詞を表示し、音楽に合わせて美しくアニメーションする歌詞をお楽しみください。"
+      },
+      "library": {
+        "title": "ミニマルデザイン",
+        "description": "シンプルですっきりとしたインターフェースで、音楽に集中できます。"
+      },
+      "ui": {
+        "title": "フルカスタマイズ",
+        "description": "テーマ、レイアウト、再生動作など、豊富な設定であなただけの体験を作り上げましょう。"
+      }
+    },
+    "guide": {
+      "step1": "音楽ファイルをmoziiに追加して、ライブラリを閲覧しましょう。",
+      "step2": "曲をタップして再生し、翻訳対応のアニメーション歌詞をお楽しみください。",
+      "step3": "設定を探索して、インターフェースや再生方法をお好みにカスタマイズしましょう。"
+    }
+  },
+  "mapMemory": {
+    "name": "Map Memory",
+    "tagline": "訪れたすべての場所を記憶する",
+    "description": "位置情報の履歴を自動的に記録する、あなただけのライフタイムライン。",
+    "features": {
+      "timeline": {
+        "title": "ロケーションタイムライン",
+        "description": "Googleマップのタイムラインのように、インタラクティブなタイムラインで過去の位置情報を確認できます。"
+      },
+      "map": {
+        "title": "ビジュアルマップ表示",
+        "description": "訪れたすべての場所を、美しいインタラクティブな地図上に表示します。"
+      },
+      "privacy": {
+        "title": "プライバシー最優先",
+        "description": "すべてのデータはお使いのデバイスに保存されます。位置情報の履歴はあなただけのものです。"
+      }
+    },
+    "guide": {
+      "step1": "位置情報の権限を許可し、Map Memoryにバックグラウンドでの記録を開始させましょう。",
+      "step2": "いつでもタイムラインを確認して、一日の行動を振り返ることができます。",
+      "step3": "マップ表示を使って、これまでに訪れた場所を探索してみましょう。"
+    }
+  },
+  "gphones": {
+    "name": "GPhones",
+    "tagline": "GPS速度計測を指先に",
+    "description": "GPSを使ってリアルタイムの速度を計測し、すべてのトリップの詳細な記録を残します。",
+    "features": {
+      "speed": {
+        "title": "リアルタイム速度",
+        "description": "GPSベースの正確な速度を、見やすくクリーンな形式で表示します。"
+      },
+      "tracking": {
+        "title": "トリップ記録",
+        "description": "旅の全行程を、詳細な速度データとともに記録します。"
+      },
+      "history": {
+        "title": "速度履歴",
+        "description": "速度グラフ、最高速度、平均速度、距離など、過去のトリップを確認できます。"
+      }
+    },
+    "guide": {
+      "step1": "GPhonesを開き、正確な速度計測のためにGPS権限を許可してください。",
+      "step2": "トリップ記録を開始して、旅の間の速度を記録しましょう。",
+      "step3": "詳細な速度チャートと統計情報でトリップ履歴を確認できます。"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "心を込めて作ったアプリ",
+      "subtitle": "シンプルで美しく、便利なiOSアプリを個人で開発しています。"
+    },
+    "appsSection": {
+      "title": "私のアプリ",
+      "subtitle": "私が作ったアプリをご覧ください"
+    }
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しません。",
+    "backHome": "ホームに戻る"
+  },
+  "about": {
+    "title": "概要",
+    "education": "コンピュータ・情報科学修士号、テンプル大学 (2023–2025)"
+  },
+  "jobOffer": {
+    "button": "仕事のオファー",
+    "title": "求人オファー",
+    "email": "メールアドレス",
+    "emailPlaceholder": "your@email.com",
+    "name": "名前",
+    "namePlaceholder": "お名前",
+    "company": "会社",
+    "companyPlaceholder": "会社名",
+    "position": "職種",
+    "positionPlaceholder": "例：iOSデベロッパー",
+    "workType": "雇用形態",
+    "workTypeFullTime": "正社員",
+    "workTypePartTime": "パートタイム",
+    "workTypeContract": "業務委託",
+    "message": "メッセージ",
+    "messagePlaceholder": "この機会について教えてください...",
+    "submit": "送信",
+    "submitting": "送信中...",
+    "success": "ありがとうございます！近日中にご連絡いたします。",
+    "error": "送信に失敗しました。もう一度お試しください。",
+    "close": "閉じる",
+    "optional": "任意"
+  }
+}

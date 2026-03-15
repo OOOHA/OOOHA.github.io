@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "apps": "Aplicaciones"
+  },
+  "footer": {
+    "copyright": "© {{year}} OOOHA. Todos los derechos reservados.",
+    "builtWith": "Hecho con amor para iOS",
+    "about": "Acerca de"
+  },
+  "feedback": {
+    "title": "Comentarios",
+    "subtitle": "Ayúdame a mejorar",
+    "bugReport": "Reportar un error",
+    "featureRequest": "Solicitar una función",
+    "bugDescription": "¿Encontraste algo mal? Házmelo saber para que pueda solucionarlo.",
+    "featureDescription": "¿Tienes una idea? Me encantaría escuchar tus sugerencias.",
+    "githubNote": "Serás redirigido a GitHub para enviar tus comentarios.",
+    "formButton": "Enviar comentarios",
+    "formNoAccount": "No se necesita cuenta",
+    "formType": "Tipo",
+    "formTypeBug": "Reporte de error",
+    "formTypeFeature": "Solicitud de función",
+    "formTitle": "Título",
+    "formTitlePlaceholder": "Resumen breve del problema o idea",
+    "formDescription": "Descripción",
+    "formDescriptionPlaceholder": "Por favor proporciona detalles...",
+    "formSubmit": "Enviar",
+    "formSubmitting": "Enviando...",
+    "formSuccess": "¡Gracias! Tus comentarios han sido enviados.",
+    "formError": "Error al enviar. Por favor intenta de nuevo.",
+    "formClose": "Cerrar",
+    "orGithub": "O a través de GitHub (cuenta requerida)",
+    "preferGithub": "¿Prefieres GitHub? Envía aquí →",
+    "logAttachment": "Archivo de log",
+    "logOptional": "opcional",
+    "logSelect": "Adjuntar archivo de log (.log, .txt, .json, .crash)",
+    "logHint": "Máx. 50KB. El contenido del archivo se incluirá en el reporte.",
+    "logTooLarge": "Archivo demasiado grande. Tamaño máximo: 50KB.",
+    "logReadError": "No se pudo leer el archivo."
+  },
+  "appStore": "Descargar en la App Store",
+  "features": "Características",
+  "guide": "Cómo usar",
+  "learnMore": "Más información",
+  "mozii": {
+    "name": "mozii",
+    "tagline": "Reproduce tus archivos de música con estilo",
+    "description": "Un reproductor de música basado en archivos con traducción de letras, letras animadas y personalización infinita — todo envuelto en un diseño limpio y minimalista.",
+    "features": {
+      "playback": {
+        "title": "Traducción y animación de letras",
+        "description": "Ve las letras traducidas en tiempo real y disfruta de letras bellamente animadas sincronizadas con tu música."
+      },
+      "library": {
+        "title": "Diseño minimalista",
+        "description": "Una interfaz limpia y simple que no estorba y te permite concentrarte en tu música."
+      },
+      "ui": {
+        "title": "Totalmente personalizable",
+        "description": "Personaliza tu experiencia con amplios ajustes — temas, diseños, comportamientos de reproducción y más."
+      }
+    },
+    "guide": {
+      "step1": "Agrega tus archivos de música a mozii y comienza a explorar tu biblioteca.",
+      "step2": "Toca una pista para reproducirla y disfruta de las letras animadas con soporte de traducción.",
+      "step3": "Explora los ajustes para personalizar la interfaz y reproducción a tu gusto."
+    }
+  },
+  "mapMemory": {
+    "name": "Map Memory",
+    "tagline": "Recuerda cada lugar que has visitado",
+    "description": "Registra automáticamente tu historial de ubicación, como una línea de tiempo personal de tu vida.",
+    "features": {
+      "timeline": {
+        "title": "Línea de tiempo de ubicación",
+        "description": "Ve tus ubicaciones pasadas en una línea de tiempo interactiva, similar a la línea de tiempo de Google Maps."
+      },
+      "map": {
+        "title": "Vista de mapa",
+        "description": "Ve todos tus lugares visitados trazados en un hermoso mapa interactivo."
+      },
+      "privacy": {
+        "title": "Privacidad primero",
+        "description": "Todos los datos permanecen en tu dispositivo. Tu historial de ubicación es solo tuyo."
+      }
+    },
+    "guide": {
+      "step1": "Otorga permisos de ubicación y deja que Map Memory comience a grabar en segundo plano.",
+      "step2": "Revisa tu línea de tiempo en cualquier momento para ver dónde has estado durante el día.",
+      "step3": "Explora la vista de mapa para descubrir todos los lugares que has visitado con el tiempo."
+    }
+  },
+  "gphones": {
+    "name": "GPhones",
+    "tagline": "Velocidad GPS al alcance de tu mano",
+    "description": "Mide tu velocidad en tiempo real usando GPS y lleva un registro detallado de cada viaje.",
+    "features": {
+      "speed": {
+        "title": "Velocidad en tiempo real",
+        "description": "Obtén lecturas de velocidad precisas basadas en GPS, mostradas en un formato limpio y fácil de leer."
+      },
+      "tracking": {
+        "title": "Grabación de viaje",
+        "description": "Graba todo tu viaje con datos de velocidad detallados a lo largo del trayecto."
+      },
+      "history": {
+        "title": "Historial de velocidad",
+        "description": "Revisa viajes pasados con gráficos de velocidad, velocidad máxima, promedio y distancia."
+      }
+    },
+    "guide": {
+      "step1": "Abre GPhones y otorga permisos GPS para lecturas de velocidad precisas.",
+      "step2": "Inicia una grabación de viaje para capturar tu velocidad durante el trayecto.",
+      "step3": "Revisa tu historial de viajes con gráficos de velocidad detallados y estadísticas."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Apps creadas con cuidado",
+      "subtitle": "Creo aplicaciones iOS que son simples, hermosas y útiles."
+    },
+    "appsSection": {
+      "title": "Mis aplicaciones",
+      "subtitle": "Descubre lo que he creado"
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe.",
+    "backHome": "Volver al inicio"
+  },
+  "about": {
+    "title": "Acerca de",
+    "education": "M.S. en Ciencias de la Computación e Información, Temple University (2023–2025)"
+  },
+  "jobOffer": {
+    "button": "Ofrecer empleo",
+    "title": "Oferta de empleo",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "company": "Empresa",
+    "companyPlaceholder": "Nombre de la empresa",
+    "position": "Puesto",
+    "positionPlaceholder": "ej. Desarrollador iOS",
+    "workType": "Tipo",
+    "workTypeFullTime": "Tiempo completo",
+    "workTypePartTime": "Medio tiempo",
+    "workTypeContract": "Contrato",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntame sobre la oportunidad...",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "¡Gracias! Me pondré en contacto pronto.",
+    "error": "Error al enviar. Por favor intenta de nuevo.",
+    "close": "Cerrar",
+    "optional": "opcional"
+  }
+}
