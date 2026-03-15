@@ -37,7 +37,8 @@
     "logSelect": "Attach a log file (.log, .txt, .json, .crash)",
     "logHint": "Max 50KB. File content will be included in the report.",
     "logTooLarge": "File too large. Maximum size is 50KB.",
-    "logReadError": "Failed to read file."
+    "logReadError": "Failed to read file.",
+    "viewOnGithub": "View on GitHub"
   },
   "appStore": "Download on the App Store",
   "features": "Features",

@@ -164,24 +164,26 @@ export default function FeedbackForm({
                   <p className="text-lg font-medium text-gray-900 dark:text-white mb-2">
                     {t("feedback.formSuccess")}
                   </p>
-                  {issueUrl && (
-                    <a
-                      href={issueUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm underline hover:opacity-80 transition-opacity"
-                      style={{ color }}
+                  <div className="mt-6 flex flex-col gap-3">
+                    {issueUrl && (
+                      <a
+                        href={issueUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl border-2 font-medium text-sm transition-all hover:opacity-80"
+                        style={{ borderColor: color, color }}
+                      >
+                        {t("feedback.viewOnGithub")}
+                      </a>
+                    )}
+                    <button
+                      onClick={handleClose}
+                      className="px-6 py-2.5 rounded-xl text-white font-medium text-sm transition-opacity hover:opacity-90"
+                      style={{ backgroundColor: color }}
                     >
-                      View on GitHub
-                    </a>
-                  )}
-                  <button
-                    onClick={handleClose}
-                    className="mt-6 px-6 py-2 rounded-xl text-white font-medium transition-opacity hover:opacity-90"
-                    style={{ backgroundColor: color }}
-                  >
-                    {t("feedback.formClose")}
-                  </button>
+                      {t("feedback.formClose")}
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">

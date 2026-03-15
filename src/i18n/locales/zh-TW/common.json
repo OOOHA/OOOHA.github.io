@@ -37,7 +37,8 @@
     "logSelect": "附加 Log 檔案 (.log, .txt, .json, .crash)",
     "logHint": "最大 50KB，檔案內容將包含在報告中。",
     "logTooLarge": "檔案太大，最大限制為 50KB。",
-    "logReadError": "無法讀取檔案。"
+    "logReadError": "無法讀取檔案。",
+    "viewOnGithub": "在 GitHub 上查看"
   },
   "appStore": "在 App Store 下載",
   "features": "功能特色",

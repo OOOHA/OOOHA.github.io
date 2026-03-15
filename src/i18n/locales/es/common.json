@@ -37,7 +37,8 @@
     "logSelect": "Adjuntar archivo de log (.log, .txt, .json, .crash)",
     "logHint": "Máx. 50KB. El contenido del archivo se incluirá en el reporte.",
     "logTooLarge": "Archivo demasiado grande. Tamaño máximo: 50KB.",
-    "logReadError": "No se pudo leer el archivo."
+    "logReadError": "No se pudo leer el archivo.",
+    "viewOnGithub": "Ver en GitHub"
   },
   "appStore": "Descargar en la App Store",
   "features": "Características",

@@ -37,7 +37,8 @@
     "logSelect": "로그 파일 첨부 (.log, .txt, .json, .crash)",
     "logHint": "최대 50KB. 파일 내용이 보고서에 포함됩니다.",
     "logTooLarge": "파일이 너무 큽니다. 최대 크기는 50KB입니다.",
-    "logReadError": "파일을 읽을 수 없습니다."
+    "logReadError": "파일을 읽을 수 없습니다.",
+    "viewOnGithub": "GitHub에서 보기"
   },
   "appStore": "App Store에서 다운로드",
   "features": "기능",

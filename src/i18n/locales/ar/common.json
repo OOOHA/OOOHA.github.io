@@ -37,7 +37,8 @@
     "logSelect": "إرفاق ملف سجل (.log, .txt, .json, .crash)",
     "logHint": "الحد الأقصى 50 كيلوبايت. سيتم تضمين محتوى الملف في التقرير.",
     "logTooLarge": "الملف كبير جداً. الحد الأقصى 50 كيلوبايت.",
-    "logReadError": "فشل في قراءة الملف."
+    "logReadError": "فشل في قراءة الملف.",
+    "viewOnGithub": "عرض على GitHub"
   },
   "appStore": "تحميل من App Store",
   "features": "المميزات",

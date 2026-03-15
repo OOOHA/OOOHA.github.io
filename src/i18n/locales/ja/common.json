@@ -37,7 +37,8 @@
     "logSelect": "ログファイルを添付 (.log, .txt, .json, .crash)",
     "logHint": "最大50KB。ファイル内容はレポートに含まれます。",
     "logTooLarge": "ファイルが大きすぎます。最大サイズは50KBです。",
-    "logReadError": "ファイルの読み込みに失敗しました。"
+    "logReadError": "ファイルの読み込みに失敗しました。",
+    "viewOnGithub": "GitHub で確認"
   },
   "appStore": "App Storeからダウンロード",
   "features": "機能",
