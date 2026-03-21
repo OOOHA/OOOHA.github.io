@@ -39,6 +39,7 @@ export const apps: AppData[] = [
     colorLight: "var(--color-mozii-light)",
     gradient: "from-violet-500 to-purple-600",
     icon: Music,
+    appStoreUrl: "https://apps.apple.com/us/app/mozii-local-music-player/id6759807227",
     iconPath: "/icons/mozii.png",
     features: [
       { titleKey: "mozii.features.playback.title", descriptionKey: "mozii.features.playback.description", icon: Languages },

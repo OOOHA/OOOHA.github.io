@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Bug, Lightbulb } from "lucide-react";
@@ -13,10 +13,14 @@ interface AppPageProps {
   app: AppData;
 }
 
+const SECTION_IDS = ["features", "guide", "feedback"] as const;
+
 export default function AppPage({ app }: AppPageProps) {
   const { t } = useTranslation();
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [feedbackType, setFeedbackType] = useState<"bug" | "feature">("bug");
+  const [activeSection, setActiveSection] = useState("");
+  const navRef = useRef<HTMLElement>(null);
 
   const openBugReport = () => {
     setFeedbackType("bug");
@@ -26,6 +30,44 @@ export default function AppPage({ app }: AppPageProps) {
   const openFeatureRequest = () => {
     setFeedbackType("feature");
     setFeedbackOpen(true);
+  };
+
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const navHeight = navRef.current?.offsetHeight ?? 0;
+    const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
+  // Scroll-spy: highlight current section using IntersectionObserver
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    SECTION_IDS.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(id);
+          }
+        },
+        { rootMargin: "-40% 0px -50% 0px" }
+      );
+
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
+
+  const sectionLabels: Record<string, string> = {
+    features: t("features"),
+    guide: t("guide"),
+    feedback: t("feedback.title"),
   };
 
   return (
@@ -77,6 +119,36 @@ export default function AppPage({ app }: AppPageProps) {
         </div>
       </section>
 
+      {/* Section Nav */}
+      <nav
+        ref={navRef}
+        className="sticky top-[65px] z-40 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-800/50"
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 flex justify-center gap-8 py-3">
+          {SECTION_IDS.map((id) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className={`relative text-sm font-medium transition-colors ${
+                activeSection === id
+                  ? "text-gray-900 dark:text-white"
+                  : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              }`}
+            >
+              {sectionLabels[id]}
+              {activeSection === id && (
+                <motion.div
+                  layoutId="section-indicator"
+                  className="absolute -bottom-3 left-0 right-0 h-0.5"
+                  style={{ backgroundColor: app.color }}
+                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                />
+              )}
+            </button>
+          ))}
+        </div>
+      </nav>
+
       {/* Description */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
         <ScrollReveal>
@@ -87,7 +159,7 @@ export default function AppPage({ app }: AppPageProps) {
       </section>
 
       {/* Features */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <section id="features" className="max-w-6xl mx-auto px-4 sm:px-6 py-16 scroll-mt-28">
         <ScrollReveal>
           <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
             {t("features")}
@@ -108,7 +180,7 @@ export default function AppPage({ app }: AppPageProps) {
       </section>
 
       {/* Usage Guide */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
+      <section id="guide" className="max-w-4xl mx-auto px-4 sm:px-6 py-16 scroll-mt-28">
         <ScrollReveal>
           <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
             {t("guide")}
@@ -134,7 +206,7 @@ export default function AppPage({ app }: AppPageProps) {
       </section>
 
       {/* Feedback */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 pb-24">
+      <section id="feedback" className="max-w-4xl mx-auto px-4 sm:px-6 py-16 pb-24 scroll-mt-28">
         <ScrollReveal>
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
