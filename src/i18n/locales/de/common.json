@@ -116,6 +116,30 @@
       "step3": "Überprüfe deinen Fahrtverlauf mit detaillierten Geschwindigkeitsdiagrammen und Statistiken."
     }
   },
+  "adguardDns": {
+    "name": "AdGuard DNS Dashboard",
+    "tagline": "Volle Kontrolle über deine DNS-Filterung",
+    "description": "Ein mobiles Dashboard für AdGuard DNS — verwalte deine DNS-Einstellungen, durchsuche Abfrageprotokolle und konfiguriere Filter, alles von deinem iPhone aus.",
+    "features": {
+      "dashboard": {
+        "title": "DNS-Dashboard",
+        "description": "Überwache den Status deiner DNS-Filterung in Echtzeit, sieh dir Statistiken an und schalte den Schutz ein oder aus."
+      },
+      "queryLog": {
+        "title": "Abfrageprotokoll",
+        "description": "Durchsuche detaillierte DNS-Abfrageprotokolle, um zu sehen, welche Domains blockiert oder zugelassen werden."
+      },
+      "filters": {
+        "title": "Benutzerdefinierte Filter",
+        "description": "Konfiguriere Sperrlisten, Erlaubnislisten und benutzerdefinierte Filterregeln, um deinen DNS-Schutz fein abzustimmen."
+      }
+    },
+    "guide": {
+      "step1": "Verbinde dein AdGuard DNS-Konto, um mit der Verwaltung deiner DNS-Einstellungen zu beginnen.",
+      "step2": "Durchsuche das Abfrageprotokoll, um DNS-Aktivitäten und blockierte Anfragen in Echtzeit zu sehen.",
+      "step3": "Passe deine Filter und Regeln an deine Datenschutzpräferenzen an."
+    }
+  },
   "home": {
     "hero": {
       "title": "Apps mit Sorgfalt entwickelt",
@@ -158,5 +182,30 @@
     "error": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "close": "Schließen",
     "optional": "optional"
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Letzte Aktualisierung: März 2026",
+    "intro": "Deine Privatsphäre ist mir wichtig. Jede App, die ich entwickle, ist nach dem Prinzip Privacy First gestaltet. Ohne deine ausdrückliche Zustimmung erhebe oder speichere ich keine personenbezogenen Daten.",
+    "dataCollection": {
+      "title": "Datenerhebung",
+      "body": "Ich erhebe nicht absichtlich persönliche Informationen. App-Daten werden lokal auf deinem Gerät gespeichert und nicht an von mir betriebene Server gesendet."
+    },
+    "inAppPurchases": {
+      "title": "In-App-Käufe",
+      "body": "In-App-Käufe werden über Apple abgewickelt. Ich kann deinen Kaufstatus über Apples Belegvalidierung überprüfen, habe aber keinen Zugang zu deinen Zahlungsdetails."
+    },
+    "thirdParty": {
+      "title": "Deine Daten bleiben auf deinem Gerät",
+      "body": "Ich betreibe keine Backend-Server zur Datenerfassung. Deine Daten verlassen dein Gerät nicht ohne deine ausdrückliche Erlaubnis. Einige Apps verbinden sich möglicherweise mit Drittanbieterdiensten (z. B. AdGuard DNS), jedoch nur, wenn du dich aktiv dafür entscheidest."
+    },
+    "analytics": {
+      "title": "Analyse & Tracking",
+      "body": "Zum jetzigen Zeitpunkt verwende ich in meinen Apps keine Analyse-, Tracking- oder Werbe-Frameworks."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": "Ich kontaktiere Nutzer nicht proaktiv. Bei Fragen zu dieser Datenschutzrichtlinie kannst du mich über die Feedback-Funktion auf dieser Website erreichen."
+    }
   }
 }

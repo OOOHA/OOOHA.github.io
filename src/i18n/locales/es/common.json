@@ -116,6 +116,30 @@
       "step3": "Revisa tu historial de viajes con gráficos de velocidad detallados y estadísticas."
     }
   },
+  "adguardDns": {
+    "name": "AdGuard DNS Dashboard",
+    "tagline": "Controla tu filtrado DNS",
+    "description": "Un panel de control móvil para AdGuard DNS — gestiona tu configuración DNS, consulta los registros de consultas y configura filtros, todo desde tu iPhone.",
+    "features": {
+      "dashboard": {
+        "title": "Panel DNS",
+        "description": "Monitorea el estado de tu filtrado DNS en tiempo real, consulta estadísticas y activa o desactiva la protección."
+      },
+      "queryLog": {
+        "title": "Registro de consultas",
+        "description": "Explora los registros detallados de consultas DNS para ver qué dominios se están bloqueando o permitiendo."
+      },
+      "filters": {
+        "title": "Filtros personalizados",
+        "description": "Configura listas de bloqueo, listas de permitidos y reglas de filtrado personalizadas para ajustar tu protección DNS."
+      }
+    },
+    "guide": {
+      "step1": "Conecta tu cuenta de AdGuard DNS para empezar a gestionar tu configuración DNS.",
+      "step2": "Consulta el registro de consultas para ver la actividad DNS y las solicitudes bloqueadas en tiempo real.",
+      "step3": "Personaliza tus filtros y reglas según tus preferencias de privacidad."
+    }
+  },
   "home": {
     "hero": {
       "title": "Apps creadas con cuidado",
@@ -158,5 +182,30 @@
     "error": "Error al enviar. Por favor intenta de nuevo.",
     "close": "Cerrar",
     "optional": "opcional"
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización: marzo de 2026",
+    "intro": "Tu privacidad importa. Cada aplicación que desarrollo está diseñada con un enfoque de privacidad primero. No recopilo ni almaceno ningún dato personal sin tu consentimiento explícito.",
+    "dataCollection": {
+      "title": "Recopilación de datos",
+      "body": "No recopilo intencionalmente información personal. Los datos de la aplicación se almacenan localmente en tu dispositivo y no se envían a servidores que yo opere."
+    },
+    "inAppPurchases": {
+      "title": "Compras dentro de la app",
+      "body": "Las compras dentro de la app se procesan a través de Apple. Puedo verificar el estado de tu compra mediante la validación de recibos de Apple, pero no tengo acceso a tus datos de pago."
+    },
+    "thirdParty": {
+      "title": "Tus datos permanecen en tu dispositivo",
+      "body": "No opero ningún servidor backend para la recopilación de datos. Tus datos no saldrán de tu dispositivo sin tu permiso explícito. Algunas aplicaciones pueden conectarse a servicios de terceros (por ej. AdGuard DNS), pero solo cuando tú elijas hacerlo."
+    },
+    "analytics": {
+      "title": "Análisis y seguimiento",
+      "body": "A la fecha, no utilizo ningún framework de análisis, seguimiento o publicidad en mis aplicaciones."
+    },
+    "contact": {
+      "title": "Contacto",
+      "body": "No contacto a los usuarios de forma proactiva. Si tienes alguna pregunta sobre esta política de privacidad, puedes contactarme a través de la función de feedback en este sitio web."
+    }
   }
 }

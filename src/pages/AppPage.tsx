@@ -153,7 +153,7 @@ export default function AppPage({ app }: AppPageProps) {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
         <ScrollReveal>
           <p className="text-lg text-center text-gray-600 dark:text-gray-400 leading-relaxed">
-            {t(`${app.id === "map-memory" ? "mapMemory" : app.id}.description`)}
+            {t(`${app.id === "map-memory" ? "mapMemory" : app.id === "adguard-dns" ? "adguardDns" : app.id}.description`)}
           </p>
         </ScrollReveal>
       </section>

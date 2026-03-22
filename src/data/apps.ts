@@ -1,4 +1,4 @@
-import { Music, MapPin, Gauge, Languages, Minimize2, Settings } from "lucide-react";
+import { Music, MapPin, Gauge, Shield, Languages, Minimize2, Settings, LayoutDashboard, ScrollText, Filter } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface AppFeature {
@@ -59,7 +59,7 @@ export const apps: AppData[] = [
     taglineKey: "mapMemory.tagline",
     color: "var(--color-mapmemory)",
     colorLight: "var(--color-mapmemory-light)",
-    gradient: "from-blue-500 to-cyan-500",
+    gradient: "from-sky-500 to-cyan-500",
     icon: MapPin,
     iconPath: "/icons/map-memory-light.png",
     iconPathDark: "/icons/map-memory-dark.png",
@@ -83,6 +83,7 @@ export const apps: AppData[] = [
     colorLight: "var(--color-gphones-light)",
     gradient: "from-emerald-500 to-teal-500",
     icon: Gauge,
+    appStoreUrl: "https://apps.apple.com/us/app/gphones/id6760122780",
     iconPath: "/icons/gphones-light.png",
     iconPathDark: "/icons/gphones-dark.png",
     features: [
@@ -96,6 +97,28 @@ export const apps: AppData[] = [
       "gphones.guide.step3",
     ],
     issueLabels: ["gphones"],
+  },
+  {
+    id: "adguard-dns",
+    nameKey: "adguardDns.name",
+    taglineKey: "adguardDns.tagline",
+    color: "var(--color-adguard)",
+    colorLight: "var(--color-adguard-light)",
+    gradient: "from-blue-400 to-blue-600",
+    icon: Shield,
+    iconPath: "/icons/AdGuardDNSDashboard_Light.png",
+    iconPathDark: "/icons/AdGuardDNSDashboard_Dark.png",
+    features: [
+      { titleKey: "adguardDns.features.dashboard.title", descriptionKey: "adguardDns.features.dashboard.description", icon: LayoutDashboard },
+      { titleKey: "adguardDns.features.queryLog.title", descriptionKey: "adguardDns.features.queryLog.description", icon: ScrollText },
+      { titleKey: "adguardDns.features.filters.title", descriptionKey: "adguardDns.features.filters.description", icon: Filter },
+    ],
+    guideSteps: [
+      "adguardDns.guide.step1",
+      "adguardDns.guide.step2",
+      "adguardDns.guide.step3",
+    ],
+    issueLabels: ["adguard-dns"],
   },
 ];
 

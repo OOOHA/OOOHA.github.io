@@ -7,10 +7,12 @@
     "Helvetica Neue", Arial, sans-serif;
   --color-mozii: #8b5cf6;
   --color-mozii-light: #a78bfa;
-  --color-mapmemory: #3b82f6;
-  --color-mapmemory-light: #60a5fa;
+  --color-mapmemory: #0EA5E9;
+  --color-mapmemory-light: #38bdf8;
   --color-gphones: #10b981;
   --color-gphones-light: #34d399;
+  --color-adguard: #3C81F6;
+  --color-adguard-light: #60a0f8;
 }
 
 html {

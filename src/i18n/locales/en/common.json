@@ -116,6 +116,30 @@
       "step3": "Review your trip history with detailed speed charts and statistics."
     }
   },
+  "adguardDns": {
+    "name": "AdGuard DNS Dashboard",
+    "tagline": "Take control of your DNS filtering",
+    "description": "A mobile dashboard for AdGuard DNS — manage your DNS settings, browse query logs, and configure filters, all from your iPhone.",
+    "features": {
+      "dashboard": {
+        "title": "DNS Dashboard",
+        "description": "Monitor your DNS filtering status, view statistics, and toggle protection on or off in real time."
+      },
+      "queryLog": {
+        "title": "Query Log",
+        "description": "Browse detailed DNS query logs to see which domains are being blocked or allowed."
+      },
+      "filters": {
+        "title": "Custom Filters",
+        "description": "Configure blocklists, allowlists, and custom filtering rules to fine-tune your DNS protection."
+      }
+    },
+    "guide": {
+      "step1": "Connect your AdGuard DNS account to start managing your DNS settings.",
+      "step2": "Browse the query log to see real-time DNS activity and blocked requests.",
+      "step3": "Customize your filters and rules to match your privacy preferences."
+    }
+  },
   "home": {
     "hero": {
       "title": "Apps crafted with care",
@@ -158,5 +182,30 @@
     "error": "Failed to send. Please try again.",
     "close": "Close",
     "optional": "optional"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "intro": "Your privacy matters. Every app I build is designed with a privacy-first approach. I do not collect or store any personal data without your explicit consent.",
+    "dataCollection": {
+      "title": "Data Collection",
+      "body": "I do not intentionally collect personal information. App data is stored locally on your device and is not sent to any server I operate."
+    },
+    "inAppPurchases": {
+      "title": "In-App Purchases",
+      "body": "In-app purchases are processed through Apple. I may verify your purchase status via Apple's receipt validation, but I do not have access to your payment details."
+    },
+    "thirdParty": {
+      "title": "Your Data Stays on Your Device",
+      "body": "I do not run any backend servers for data collection. Your data will not leave your device without your explicit permission. Some apps may connect to third-party services (e.g. AdGuard DNS) only when you choose to do so."
+    },
+    "analytics": {
+      "title": "Analytics & Tracking",
+      "body": "As of this writing, I do not use any analytics, tracking, or advertising frameworks in my apps."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "I do not proactively contact users. If you have questions about this privacy policy, you can reach me through the feedback feature on this website."
+    }
   }
 }

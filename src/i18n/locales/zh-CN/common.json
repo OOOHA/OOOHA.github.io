@@ -116,6 +116,30 @@
       "step3": "查看行程历史，包含详细的速度图表和统计数据。"
     }
   },
+  "adguardDns": {
+    "name": "AdGuard DNS Dashboard",
+    "tagline": "掌控你的 DNS 过滤设置",
+    "description": "AdGuard DNS 移动控制台 — 管理 DNS 设置、浏览查询日志、配置过滤规则，一切尽在 iPhone 上。",
+    "features": {
+      "dashboard": {
+        "title": "DNS 控制台",
+        "description": "实时监控 DNS 过滤状态、查看统计数据，随时开启或关闭保护功能。"
+      },
+      "queryLog": {
+        "title": "查询日志",
+        "description": "浏览详细的 DNS 查询日志，了解哪些域名被拦截或放行。"
+      },
+      "filters": {
+        "title": "自定义过滤器",
+        "description": "配置拦截列表、白名单和自定义过滤规则，精确调整你的 DNS 保护。"
+      }
+    },
+    "guide": {
+      "step1": "连接你的 AdGuard DNS 账号，开始管理 DNS 设置。",
+      "step2": "浏览查询日志，实时查看 DNS 活动和被拦截的请求。",
+      "step3": "自定义过滤器和规则，打造符合你隐私需求的配置。"
+    }
+  },
   "home": {
     "hero": {
       "title": "用心打造的应用",
@@ -158,5 +182,30 @@
     "error": "发送失败，请重试。",
     "close": "关闭",
     "optional": "选填"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2026 年 3 月",
+    "intro": "你的隐私至关重要。我开发的每一个 App 都以隐私优先的原则设计。未经你的明确同意，我不会收集或存储任何个人数据。",
+    "dataCollection": {
+      "title": "数据收集",
+      "body": "我不会刻意收集个人信息。App 数据存储在你的设备本地，不会被发送至任何由我运营的服务器。"
+    },
+    "inAppPurchases": {
+      "title": "App 内购",
+      "body": "App 内购通过 Apple 处理。我可能会通过 Apple 的收据验证来确认购买状态，但我无法获取你的付款详细信息。"
+    },
+    "thirdParty": {
+      "title": "你的数据留在你的设备上",
+      "body": "我没有架设任何用于数据收集的后端服务器。未经你的明确许可，你的数据不会离开你的设备。部分 App 可能会连接第三方服务（例如 AdGuard DNS），但仅在你主动选择时才会进行。"
+    },
+    "analytics": {
+      "title": "分析与追踪",
+      "body": "截至目前，我的 App 中未使用任何分析、追踪或广告框架。"
+    },
+    "contact": {
+      "title": "联系方式",
+      "body": "我不会主动联系用户。如果你对本隐私政策有任何疑问，可以通过本网站的反馈功能联系我。"
+    }
   }
 }

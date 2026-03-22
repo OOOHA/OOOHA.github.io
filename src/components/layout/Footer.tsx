@@ -24,6 +24,13 @@ export default function Footer() {
           >
             {t("footer.about")}
           </Link>
+          <span className="text-gray-300 dark:text-gray-700">|</span>
+          <Link
+            to="/privacy"
+            className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+          >
+            {t("privacy.title")}
+          </Link>
         </div>
       </div>
     </footer>
