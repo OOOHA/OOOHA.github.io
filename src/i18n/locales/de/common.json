@@ -186,10 +186,10 @@
   "privacy": {
     "title": "Datenschutzrichtlinie",
     "lastUpdated": "Letzte Aktualisierung: März 2026",
-    "intro": "Deine Privatsphäre ist mir wichtig. Jede App, die ich entwickle, ist nach dem Prinzip Privacy First gestaltet. Ohne deine ausdrückliche Zustimmung erhebe oder speichere ich keine personenbezogenen Daten.",
+    "intro": "Deine Privatsphäre ist mir wichtig. Jede App, die ich entwickle, ist mit deiner Privatsphäre im Fokus gestaltet. Ohne deine Zustimmung erhebe oder speichere ich keine personenbezogenen Daten.",
     "dataCollection": {
       "title": "Datenerhebung",
-      "body": "Ich erhebe nicht absichtlich persönliche Informationen. App-Daten werden lokal auf deinem Gerät gespeichert und nicht an von mir betriebene Server gesendet."
+      "body": "Ich erhebe nicht absichtlich persönliche Informationen. Deine App-Daten verbleiben auf deinem Gerät und werden nicht an von mir betriebene Server gesendet."
     },
     "inAppPurchases": {
       "title": "In-App-Käufe",
@@ -197,7 +197,7 @@
     },
     "thirdParty": {
       "title": "Deine Daten bleiben auf deinem Gerät",
-      "body": "Ich betreibe keine Backend-Server zur Datenerfassung. Deine Daten verlassen dein Gerät nicht ohne deine ausdrückliche Erlaubnis. Einige Apps verbinden sich möglicherweise mit Drittanbieterdiensten (z. B. AdGuard DNS), jedoch nur, wenn du dich aktiv dafür entscheidest."
+      "body": "Ich betreibe keine Backend-Server zur Datenerfassung. Deine Daten bleiben auf deinem Gerät, sofern du dich nicht aktiv anders entscheidest. Einige Apps verbinden sich möglicherweise mit Drittanbieterdiensten, jedoch nur, wenn du dies bewusst aktivierst."
     },
     "analytics": {
       "title": "Analyse & Tracking",

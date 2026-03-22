@@ -186,10 +186,10 @@
   "privacy": {
     "title": "Política de privacidad",
     "lastUpdated": "Última actualización: marzo de 2026",
-    "intro": "Tu privacidad importa. Cada aplicación que desarrollo está diseñada con un enfoque de privacidad primero. No recopilo ni almaceno ningún dato personal sin tu consentimiento explícito.",
+    "intro": "Tu privacidad importa. Cada aplicación que desarrollo está diseñada pensando en tu privacidad. No recopilo ni almaceno datos personales sin tu consentimiento.",
     "dataCollection": {
       "title": "Recopilación de datos",
-      "body": "No recopilo intencionalmente información personal. Los datos de la aplicación se almacenan localmente en tu dispositivo y no se envían a servidores que yo opere."
+      "body": "No recopilo intencionalmente información personal. Tus datos de la aplicación permanecen en tu dispositivo y no se envían a servidores que yo opere."
     },
     "inAppPurchases": {
       "title": "Compras dentro de la app",
@@ -197,7 +197,7 @@
     },
     "thirdParty": {
       "title": "Tus datos permanecen en tu dispositivo",
-      "body": "No opero ningún servidor backend para la recopilación de datos. Tus datos no saldrán de tu dispositivo sin tu permiso explícito. Algunas aplicaciones pueden conectarse a servicios de terceros (por ej. AdGuard DNS), pero solo cuando tú elijas hacerlo."
+      "body": "No opero ningún servidor backend para la recopilación de datos. Tus datos permanecen en tu dispositivo a menos que tú decidas lo contrario. Algunas aplicaciones pueden conectarse a servicios de terceros, pero solo cuando tú lo actives."
     },
     "analytics": {
       "title": "Análisis y seguimiento",

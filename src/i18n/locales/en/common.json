@@ -186,10 +186,10 @@
   "privacy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: March 2026",
-    "intro": "Your privacy matters. Every app I build is designed with a privacy-first approach. I do not collect or store any personal data without your explicit consent.",
+    "intro": "Your privacy matters. Every app I build is designed with your privacy in mind. I do not collect or store personal data without your consent.",
     "dataCollection": {
       "title": "Data Collection",
-      "body": "I do not intentionally collect personal information. App data is stored locally on your device and is not sent to any server I operate."
+      "body": "I do not intentionally collect personal information. Your app data lives on your device and is not sent to any server I operate."
     },
     "inAppPurchases": {
       "title": "In-App Purchases",
@@ -197,7 +197,7 @@
     },
     "thirdParty": {
       "title": "Your Data Stays on Your Device",
-      "body": "I do not run any backend servers for data collection. Your data will not leave your device without your explicit permission. Some apps may connect to third-party services (e.g. AdGuard DNS) only when you choose to do so."
+      "body": "I do not run any backend servers for data collection. Your data stays on your device unless you choose otherwise. Some apps may connect to third-party services, but only when you actively opt in."
     },
     "analytics": {
       "title": "Analytics & Tracking",
