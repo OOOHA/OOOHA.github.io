@@ -61,6 +61,7 @@ export const apps: AppData[] = [
     colorLight: "var(--color-mapmemory-light)",
     gradient: "from-sky-500 to-cyan-500",
     icon: MapPin,
+    appStoreUrl: "https://apps.apple.com/us/app/map-memory-map-timeline/id6759832315",
     iconPath: "/icons/map-memory-light.png",
     iconPathDark: "/icons/map-memory-dark.png",
     features: [
