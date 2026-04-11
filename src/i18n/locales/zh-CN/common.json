@@ -117,7 +117,7 @@
     }
   },
   "adguardDns": {
-    "name": "AdGuard DNS Dashboard",
+    "name": "AGD Remote",
     "tagline": "掌控你的 DNS 过滤设置",
     "description": "AdGuard DNS 移动控制台 — 管理 DNS 设置、浏览查询日志、配置过滤规则，一切尽在 iPhone 上。",
     "features": {

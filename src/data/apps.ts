@@ -107,6 +107,7 @@ export const apps: AppData[] = [
     colorLight: "var(--color-adguard-light)",
     gradient: "from-blue-400 to-blue-600",
     icon: Shield,
+    appStoreUrl: "https://apps.apple.com/us/app/agd-remote/id6760930980",
     iconPath: "/icons/AdGuardDNSDashboard_Light.png",
     iconPathDark: "/icons/AdGuardDNSDashboard_Dark.png",
     features: [

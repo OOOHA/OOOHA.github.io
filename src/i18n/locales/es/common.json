@@ -117,7 +117,7 @@
     }
   },
   "adguardDns": {
-    "name": "AdGuard DNS Dashboard",
+    "name": "AGD Remote",
     "tagline": "Controla tu filtrado DNS",
     "description": "Un panel de control móvil para AdGuard DNS — gestiona tu configuración DNS, consulta los registros de consultas y configura filtros, todo desde tu iPhone.",
     "features": {

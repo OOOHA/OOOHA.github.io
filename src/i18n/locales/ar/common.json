@@ -117,7 +117,7 @@
     }
   },
   "adguardDns": {
-    "name": "AdGuard DNS Dashboard",
+    "name": "AGD Remote",
     "tagline": "تحكم في تصفية DNS الخاص بك",
     "description": "لوحة تحكم محمولة لـ AdGuard DNS — أدر إعدادات DNS، وتصفح سجلات الاستعلامات، وقم بتكوين الفلاتر، كل ذلك من iPhone الخاص بك.",
     "features": {
