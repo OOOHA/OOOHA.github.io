@@ -12,6 +12,7 @@ body:
         - mozii
         - Map Memory
         - GPhones
+        - AGD Remote
     validations:
       required: true
   - type: textarea

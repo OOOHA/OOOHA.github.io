@@ -10,7 +10,25 @@ const ALLOWED_ORIGINS = [
   "http://localhost:4173",  // Vite preview
 ];
 
-const VALID_APPS = ["mozii", "map-memory", "gphones"];
+const APP_CONFIG = {
+  mozii: {
+    name: "mozii",
+    issueLabel: "mozii",
+  },
+  "map-memory": {
+    name: "Map Memory",
+    issueLabel: "map-memory",
+  },
+  gphones: {
+    name: "GPhones",
+    issueLabel: "gphones",
+  },
+  "adguard-dns": {
+    name: "AGD Remote",
+    issueLabel: "AGD Remote",
+  },
+};
+
 const VALID_TYPES = ["bug", "feature", "job-offer"];
 const VALID_WORK_TYPES = ["full-time", "part-time", "contract"];
 
@@ -54,16 +72,19 @@ function jsonResponse(data, status, origin) {
   });
 }
 
-async function createGitHubIssue(env, title, body, labels) {
-  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/issues`;
-  const headers = {
+function githubHeaders(env) {
+  return {
     Authorization: `Bearer ${env.GITHUB_TOKEN}`,
     Accept: "application/vnd.github.v3+json",
     "Content-Type": "application/json",
     "User-Agent": "OOOHA-Feedback-Worker",
   };
+}
 
-  // First attempt: with labels
+async function createGitHubIssue(env, title, body, labels, fallbackLabels) {
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/issues`;
+  const headers = githubHeaders(env);
+
   const response = await fetch(url, {
     method: "POST",
     headers,
@@ -74,16 +95,15 @@ async function createGitHubIssue(env, title, body, labels) {
     return await response.json();
   }
 
-  // If failed (likely 422 due to non-existent labels), retry without labels
   const errorText = await response.text();
-  console.error("GitHub API error (with labels):", response.status, errorText);
 
-  if (response.status === 422) {
-    console.log("Retrying without labels...");
+  if (response.status === 422 && fallbackLabels.length > 0) {
+    console.error("GitHub API rejected full label set:", errorText);
+
     const retryResponse = await fetch(url, {
       method: "POST",
       headers,
-      body: JSON.stringify({ title, body }),
+      body: JSON.stringify({ title, body, labels: fallbackLabels }),
     });
 
     if (retryResponse.ok) {
@@ -91,7 +111,7 @@ async function createGitHubIssue(env, title, body, labels) {
     }
 
     const retryError = await retryResponse.text();
-    throw new Error(`GitHub API failed: ${retryResponse.status} ${retryError}`);
+    throw new Error(`GitHub API failed after label fallback: ${retryResponse.status} ${retryError}`);
   }
 
   throw new Error(`GitHub API failed: ${response.status} ${errorText}`);
@@ -141,7 +161,7 @@ export default {
       return jsonResponse({ success: false, error: "Invalid type" }, 400, allowedOrigin);
     }
 
-    let issueTitle, issueBody, labels;
+    let issueTitle, issueBody, labels, fallbackLabels;
 
     if (type === "job-offer") {
       // Job offer validation
@@ -176,6 +196,7 @@ export default {
       const displayPosition = position?.trim() || "General Inquiry";
 
       labels = ["job-offer", "from-web"];
+      fallbackLabels = ["from-web"];
       issueTitle = `[Job Offer] ${displayName} - ${displayPosition}`;
 
       const parts = [`## Job Offer\n`];
@@ -192,7 +213,11 @@ export default {
       // Bug report / Feature request validation
       const { app, title, description } = body;
 
-      if (!app || !VALID_APPS.includes(app)) {
+      const appConfig = Object.prototype.hasOwnProperty.call(APP_CONFIG, app)
+        ? APP_CONFIG[app]
+        : null;
+
+      if (!appConfig) {
         return jsonResponse({ success: false, error: "Invalid app" }, 400, allowedOrigin);
       }
       if (!title || typeof title !== "string" || title.trim().length === 0) {
@@ -210,18 +235,23 @@ export default {
 
       labels = [
         type === "bug" ? "bug" : "enhancement",
-        app,
+        appConfig.issueLabel,
+        "from-web",
+      ];
+      fallbackLabels = [
+        type === "bug" ? "bug" : "enhancement",
         "from-web",
       ];
 
       const typeLabel = type === "bug" ? "Bug Report" : "Feature Request";
-      issueTitle = `[${typeLabel}] [${app}] ${title.trim()}`;
-      issueBody = `## ${typeLabel}\n\n**App:** ${app}\n\n${description.trim()}\n\n---\n*Submitted via web form*`;
+      issueTitle = `[${typeLabel}] [${appConfig.name}] ${title.trim()}`;
+      issueBody = `## ${typeLabel}\n\n**App:** ${appConfig.name}\n**App ID:** ${app}\n\n${description.trim()}\n\n---\n*Submitted via web form*`;
     }
 
-    // Create GitHub Issue (with automatic fallback if labels don't exist)
+    // Create GitHub Issue. If an app-specific label is missing on GitHub,
+    // retry with stable labels so the submission is still categorized.
     try {
-      const issue = await createGitHubIssue(env, issueTitle, issueBody, labels);
+      const issue = await createGitHubIssue(env, issueTitle, issueBody, labels, fallbackLabels);
       return jsonResponse({
         success: true,
         issueUrl: issue.html_url,

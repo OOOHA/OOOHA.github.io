@@ -120,7 +120,7 @@ export const apps: AppData[] = [
       "adguardDns.guide.step2",
       "adguardDns.guide.step3",
     ],
-    issueLabels: ["adguard-dns"],
+    issueLabels: ["AGD Remote"],
   },
 ];
 
