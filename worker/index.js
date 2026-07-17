@@ -31,6 +31,8 @@ const APP_CONFIG = {
 
 const VALID_TYPES = ["bug", "feature", "job-offer"];
 const VALID_WORK_TYPES = ["full-time", "part-time", "contract"];
+// 5,000 characters of feedback plus one optional 50 KiB text attachment.
+const MAX_FEEDBACK_DESCRIPTION_LENGTH = 58_000;
 
 // Simple in-memory rate limiting (resets on worker restart, which is fine for free tier)
 const rateLimitMap = new Map();
@@ -229,8 +231,8 @@ export default {
       if (!description || typeof description !== "string" || description.trim().length === 0) {
         return jsonResponse({ success: false, error: "Description is required" }, 400, allowedOrigin);
       }
-      if (description.length > 5000) {
-        return jsonResponse({ success: false, error: "Description too long (max 5000 characters)" }, 400, allowedOrigin);
+      if (description.length > MAX_FEEDBACK_DESCRIPTION_LENGTH) {
+        return jsonResponse({ success: false, error: "Description or attachment is too long" }, 400, allowedOrigin);
       }
 
       labels = [

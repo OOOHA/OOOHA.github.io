@@ -16,7 +16,39 @@ interface FeedbackFormProps {
 type FeedbackType = "bug" | "feature";
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
-const MAX_LOG_SIZE = 50 * 1024; // 50KB
+const MAX_ATTACHMENT_SIZE = 50 * 1024;
+const ATTACHMENT_EXTENSIONS = [".log", ".txt", ".json", ".crash", ".md", ".csv"];
+const ATTACHMENT_ACCEPT = ATTACHMENT_EXTENSIONS.join(",");
+const ATTACHMENT_TYPES_LABEL = ATTACHMENT_EXTENSIONS.join(", ");
+const ATTACHMENT_CODE_FENCE = "````";
+
+function isSupportedAttachment(fileName: string) {
+  const normalizedName = fileName.toLowerCase();
+  return ATTACHMENT_EXTENSIONS.some((extension) => normalizedName.endsWith(extension));
+}
+
+function sanitizeAttachmentName(fileName: string) {
+  return Array.from(fileName, (character) => {
+    const codePoint = character.codePointAt(0) ?? 0;
+    return codePoint < 32 || codePoint === 127 || character === "`" ? " " : character;
+  })
+    .join("")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 255) || "attachment";
+}
+
+function formatAttachment(
+  type: FeedbackType,
+  fileName: string,
+  content: string,
+) {
+  const heading = type === "bug" ? "Log" : "Attachment";
+  const safeFileName = sanitizeAttachmentName(fileName);
+  const safeContent = content.replace(/^( {0,3})(`{4,})/gm, "    $1$2");
+
+  return `### ${heading}\n\n**File:** \`${safeFileName}\`\n\n${ATTACHMENT_CODE_FENCE}text\n${safeContent}\n${ATTACHMENT_CODE_FENCE}`;
+}
 
 export default function FeedbackForm({
   appId,
@@ -30,8 +62,9 @@ export default function FeedbackForm({
   const [type, setType] = useState<FeedbackType>(defaultType);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [logContent, setLogContent] = useState("");
-  const [logFileName, setLogFileName] = useState("");
+  const [attachmentContent, setAttachmentContent] = useState("");
+  const [attachmentFileName, setAttachmentFileName] = useState("");
+  const [attachmentError, setAttachmentError] = useState("");
   const [status, setStatus] = useState<FormStatus>("idle");
   const [issueUrl, setIssueUrl] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
@@ -40,8 +73,9 @@ export default function FeedbackForm({
   const resetForm = () => {
     setTitle("");
     setDescription("");
-    setLogContent("");
-    setLogFileName("");
+    setAttachmentContent("");
+    setAttachmentFileName("");
+    setAttachmentError("");
     setStatus("idle");
     setIssueUrl("");
     setErrorMsg("");
@@ -61,24 +95,33 @@ export default function FeedbackForm({
     const file = e.target.files?.[0];
     if (!file) return;
 
-    if (file.size > MAX_LOG_SIZE) {
-      setErrorMsg(t("feedback.logTooLarge"));
+    if (!isSupportedAttachment(file.name)) {
+      setAttachmentError(t("feedback.attachmentUnsupported"));
+      e.target.value = "";
+      return;
+    }
+
+    if (file.size > MAX_ATTACHMENT_SIZE) {
+      setAttachmentError(t("feedback.attachmentTooLarge"));
+      e.target.value = "";
       return;
     }
 
     try {
       const text = await file.text();
-      setLogContent(text);
-      setLogFileName(file.name);
-      setErrorMsg("");
+      setAttachmentContent(text);
+      setAttachmentFileName(file.name);
+      setAttachmentError("");
     } catch {
-      setErrorMsg(t("feedback.logReadError"));
+      setAttachmentError(t("feedback.attachmentReadError"));
+      e.target.value = "";
     }
   };
 
-  const removeLog = () => {
-    setLogContent("");
-    setLogFileName("");
+  const removeAttachment = () => {
+    setAttachmentContent("");
+    setAttachmentFileName("");
+    setAttachmentError("");
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
@@ -87,10 +130,9 @@ export default function FeedbackForm({
     setStatus("submitting");
     setErrorMsg("");
 
-    // Build full description with log appended
     let fullDescription = description.trim();
-    if (logContent) {
-      fullDescription += `\n\n### Log (${logFileName})\n\`\`\`\n${logContent}\n\`\`\``;
+    if (attachmentFileName) {
+      fullDescription += `\n\n${formatAttachment(type, attachmentFileName, attachmentContent)}`;
     }
 
     try {
@@ -149,7 +191,9 @@ export default function FeedbackForm({
                 {t("feedback.title")} — {appName}
               </h3>
               <button
+                type="button"
                 onClick={handleClose}
+                aria-label={t("feedback.formClose")}
                 className="p-1 rounded-lg hover:bg-white/20 transition-colors"
               >
                 <X className="w-5 h-5" />
@@ -254,51 +298,59 @@ export default function FeedbackForm({
                     />
                   </div>
 
-                  {/* Log file upload (bug reports only) */}
-                  {type === "bug" && (
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                        {t("feedback.logAttachment")}{" "}
-                        <span className="text-gray-400 dark:text-gray-500 font-normal">
-                          ({t("feedback.logOptional")})
+                  {/* Optional text attachment for bug reports and feature requests */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      {t("feedback.attachmentLabel")}{" "}
+                      <span className="text-gray-400 dark:text-gray-500 font-normal">
+                        ({t("feedback.attachmentOptional")})
+                      </span>
+                    </label>
+                    {attachmentFileName ? (
+                      <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                        <Paperclip className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                        <span className="text-sm text-gray-700 dark:text-gray-300 truncate flex-1">
+                          {attachmentFileName}
                         </span>
-                      </label>
-                      {logFileName ? (
-                        <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-                          <Paperclip className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                          <span className="text-sm text-gray-700 dark:text-gray-300 truncate flex-1">
-                            {logFileName}
-                          </span>
-                          <button
-                            type="button"
-                            onClick={removeLog}
-                            className="text-gray-400 hover:text-red-500 transition-colors"
-                          >
-                            <X className="w-4 h-4" />
-                          </button>
-                        </div>
-                      ) : (
                         <button
                           type="button"
-                          onClick={() => fileInputRef.current?.click()}
-                          className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 border-dashed border-gray-200 dark:border-gray-700 text-sm text-gray-500 dark:text-gray-400 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-600 dark:hover:text-gray-300 transition-all"
+                          onClick={removeAttachment}
+                          aria-label={t("feedback.attachmentRemove")}
+                          className="text-gray-400 hover:text-red-500 transition-colors"
                         >
-                          <Paperclip className="w-4 h-4" />
-                          {t("feedback.logSelect")}
+                          <X className="w-4 h-4" />
                         </button>
-                      )}
-                      <input
-                        ref={fileInputRef}
-                        type="file"
-                        accept=".log,.txt,.json,.crash"
-                        onChange={handleFileSelect}
-                        className="hidden"
-                      />
-                      <p className="mt-1.5 text-xs text-gray-400 dark:text-gray-500">
-                        {t("feedback.logHint")}
+                      </div>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() => fileInputRef.current?.click()}
+                        className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 border-dashed border-gray-200 dark:border-gray-700 text-sm text-gray-500 dark:text-gray-400 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-600 dark:hover:text-gray-300 transition-all"
+                      >
+                        <Paperclip className="w-4 h-4" />
+                        {t("feedback.attachmentSelect")}
+                      </button>
+                    )}
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept={ATTACHMENT_ACCEPT}
+                      onChange={handleFileSelect}
+                      className="hidden"
+                    />
+                    <p className="mt-1.5 text-xs text-gray-400 dark:text-gray-500">
+                      {t("feedback.attachmentHint", { types: ATTACHMENT_TYPES_LABEL })}
+                    </p>
+                    {attachmentError && (
+                      <p
+                        role="alert"
+                        className="mt-2 flex items-center gap-2 text-sm text-red-600 dark:text-red-400"
+                      >
+                        <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                        {attachmentError}
                       </p>
-                    </div>
-                  )}
+                    )}
+                  </div>
 
                   {/* Error message */}
                   {status === "error" && (
