@@ -11,3 +11,7 @@ iOS apps built for simplicity and daily use.
 **Map Memory** — Remember every place you've been. Automatically records your location history as a personal timeline, with all data stored privately on your device.
 
 **GPhones** — GPS-powered speed at your fingertips. Real-time speed display, trip recording, and detailed speed history with charts and statistics.
+
+**AGD Remote** — Manage AdGuard DNS settings, query logs, and filtering rules from your iPhone.
+
+**Money** — A simple, private expense tracker with no developer-operated server, optional iCloud sync, and shared ledgers for collaborative tracking.

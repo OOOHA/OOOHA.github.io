@@ -23,7 +23,7 @@ export default function HomePage() {
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {apps.map((app, index) => {
             return (
               <ScrollReveal key={app.id} delay={index * 0.15}>

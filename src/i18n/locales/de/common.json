@@ -142,6 +142,30 @@
       "step3": "Passe deine Filter und Regeln an deine Datenschutzpräferenzen an."
     }
   },
+  "money": {
+    "name": "Money",
+    "tagline": "Finanzen einfach und privat gemeinsam verwalten",
+    "description": "Eine übersichtliche Ausgaben-App ohne vom Entwickler betriebenen Server. Deine Finanzdaten bleiben auf deinem Gerät, solange du iCloud-Synchronisierung oder Zusammenarbeit nicht aktivierst.",
+    "features": {
+      "privacy": {
+        "title": "Datenschutz von Grund auf",
+        "description": "Kein Konto und kein vom Entwickler betriebener Server. Deine Einträge bleiben auf deinem Gerät oder werden bei aktivierter Synchronisierung in deinem iCloud-Account gespeichert."
+      },
+      "collaboration": {
+        "title": "Geteilte Haushaltsbücher",
+        "description": "Lade andere über iCloud ein und haltet Ausgaben für Haushalt, Reisen oder Gruppen gemeinsam aktuell."
+      },
+      "tracking": {
+        "title": "Einfaches Erfassen",
+        "description": "Erfasse Einnahmen und Ausgaben in einer ruhigen, klaren Oberfläche für den täglichen Gebrauch."
+      }
+    },
+    "guide": {
+      "step1": "Erstelle ein Haushaltsbuch und trage Einnahmen und Ausgaben direkt ein.",
+      "step2": "Aktiviere bei Bedarf die iCloud-Synchronisierung für deine Apple-Geräte.",
+      "step3": "Teile ein Haushaltsbuch über iCloud, wenn ihr eure Finanzen gemeinsam erfassen möchtet."
+    }
+  },
   "home": {
     "hero": {
       "title": "Apps mit Sorgfalt entwickelt",
@@ -187,7 +211,7 @@
   },
   "privacy": {
     "title": "Datenschutzrichtlinie",
-    "lastUpdated": "Letzte Aktualisierung: März 2026",
+    "lastUpdated": "Letzte Aktualisierung: August 2026",
     "intro": "Deine Privatsphäre ist mir wichtig. Jede App, die ich entwickle, ist mit deiner Privatsphäre im Fokus gestaltet. Ohne deine Zustimmung erhebe oder speichere ich keine personenbezogenen Daten.",
     "dataCollection": {
       "title": "Datenerhebung",
@@ -198,8 +222,8 @@
       "body": "In-App-Käufe werden über Apple abgewickelt. Ich kann deinen Kaufstatus über Apples Belegvalidierung überprüfen, habe aber keinen Zugang zu deinen Zahlungsdetails."
     },
     "thirdParty": {
-      "title": "Deine Daten bleiben auf deinem Gerät",
-      "body": "Ich betreibe keine Backend-Server zur Datenerfassung. Deine Daten bleiben auf deinem Gerät, sofern du dich nicht aktiv anders entscheidest. Einige Apps verbinden sich möglicherweise mit Drittanbieterdiensten, jedoch nur, wenn du dies bewusst aktivierst."
+      "title": "Gerät, iCloud und Drittanbieterdienste",
+      "body": "Ich betreibe keine Backend-Server, die App-Daten erfassen. Deine Daten bleiben standardmäßig auf deinem Gerät. Wenn du iCloud-Synchronisierung oder Teilen aktivierst, werden die betreffenden Daten über Apple iCloud gespeichert und übertragen; eingeladene Personen können auf geteilte Einträge zugreifen. Einige Apps verbinden sich nur dann mit Drittanbieterdiensten, wenn du dies auswählst und einrichtest."
     },
     "analytics": {
       "title": "Analyse & Tracking",

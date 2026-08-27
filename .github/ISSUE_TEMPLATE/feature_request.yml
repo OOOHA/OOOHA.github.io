@@ -13,6 +13,7 @@ body:
         - Map Memory
         - GPhones
         - AGD Remote
+        - Money
     validations:
       required: true
   - type: textarea

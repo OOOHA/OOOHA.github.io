@@ -1,4 +1,19 @@
-import { Music, MapPin, Gauge, Shield, Languages, Minimize2, Settings, LayoutDashboard, ScrollText, Filter } from "lucide-react";
+import {
+  Filter,
+  Gauge,
+  Languages,
+  LayoutDashboard,
+  MapPin,
+  Minimize2,
+  Music,
+  ReceiptText,
+  Settings,
+  Shield,
+  ShieldCheck,
+  ScrollText,
+  Users,
+  Wallet,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface AppFeature {
@@ -11,6 +26,7 @@ export interface AppData {
   id: string;
   nameKey: string;
   taglineKey: string;
+  descriptionKey: string;
   color: string;
   colorLight: string;
   gradient: string;
@@ -35,6 +51,7 @@ export const apps: AppData[] = [
     id: "mozii",
     nameKey: "mozii.name",             // → locales/{lang}/common.json → mozii.name
     taglineKey: "mozii.tagline",       // → locales/{lang}/common.json → mozii.tagline
+    descriptionKey: "mozii.description",
     color: "var(--color-mozii)",
     colorLight: "var(--color-mozii-light)",
     gradient: "from-violet-500 to-purple-600",
@@ -58,6 +75,7 @@ export const apps: AppData[] = [
     id: "map-memory",
     nameKey: "mapMemory.name",
     taglineKey: "mapMemory.tagline",
+    descriptionKey: "mapMemory.description",
     color: "var(--color-mapmemory)",
     colorLight: "var(--color-mapmemory-light)",
     gradient: "from-sky-500 to-cyan-500",
@@ -81,6 +99,7 @@ export const apps: AppData[] = [
     id: "gphones",
     nameKey: "gphones.name",
     taglineKey: "gphones.tagline",
+    descriptionKey: "gphones.description",
     color: "var(--color-gphones)",
     colorLight: "var(--color-gphones-light)",
     gradient: "from-emerald-500 to-teal-500",
@@ -104,6 +123,7 @@ export const apps: AppData[] = [
     id: "adguard-dns",
     nameKey: "adguardDns.name",
     taglineKey: "adguardDns.tagline",
+    descriptionKey: "adguardDns.description",
     color: "var(--color-adguard)",
     colorLight: "var(--color-adguard-light)",
     gradient: "from-blue-400 to-blue-600",
@@ -122,6 +142,29 @@ export const apps: AppData[] = [
       "adguardDns.guide.step3",
     ],
     issueLabels: ["AGD Remote"],
+  },
+  {
+    id: "money",
+    nameKey: "money.name",
+    taglineKey: "money.tagline",
+    descriptionKey: "money.description",
+    color: "var(--color-money)",
+    colorLight: "var(--color-money-light)",
+    gradient: "from-indigo-500 to-violet-600",
+    icon: Wallet,
+    iconPath: "/icons/money-light.png",
+    iconPathDark: "/icons/money-dark.png",
+    features: [
+      { titleKey: "money.features.privacy.title", descriptionKey: "money.features.privacy.description", icon: ShieldCheck },
+      { titleKey: "money.features.collaboration.title", descriptionKey: "money.features.collaboration.description", icon: Users },
+      { titleKey: "money.features.tracking.title", descriptionKey: "money.features.tracking.description", icon: ReceiptText },
+    ],
+    guideSteps: [
+      "money.guide.step1",
+      "money.guide.step2",
+      "money.guide.step3",
+    ],
+    issueLabels: ["Money"],
   },
 ];
 

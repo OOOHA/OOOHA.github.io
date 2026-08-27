@@ -142,6 +142,30 @@
       "step3": "Personaliza tus filtros y reglas según tus preferencias de privacidad."
     }
   },
+  "money": {
+    "name": "Money",
+    "tagline": "Finanzas sencillas, compartidas en privado",
+    "description": "Un registro de gastos sencillo y sin servidores operados por el desarrollador. Tus datos financieros permanecen en el dispositivo salvo que actives la sincronización o colaboración mediante iCloud.",
+    "features": {
+      "privacy": {
+        "title": "Privacidad desde el diseño",
+        "description": "Sin cuenta y sin servidores operados por el desarrollador. Tus registros permanecen en el dispositivo o en tu cuenta de iCloud cuando activas la sincronización."
+      },
+      "collaboration": {
+        "title": "Libros compartidos",
+        "description": "Invita a otras personas mediante iCloud y mantengan juntos los gastos del hogar, viajes o grupos."
+      },
+      "tracking": {
+        "title": "Registro sencillo",
+        "description": "Registra ingresos y gastos en una interfaz tranquila y minimalista pensada para el día a día."
+      }
+    },
+    "guide": {
+      "step1": "Crea un libro y registra tus ingresos y gastos a medida que ocurren.",
+      "step2": "Activa la sincronización con iCloud si quieres acceder a los registros desde tus dispositivos Apple.",
+      "step3": "Comparte un libro mediante iCloud cuando quieras llevar las cuentas con otras personas."
+    }
+  },
   "home": {
     "hero": {
       "title": "Apps creadas con cuidado",
@@ -187,7 +211,7 @@
   },
   "privacy": {
     "title": "Política de privacidad",
-    "lastUpdated": "Última actualización: marzo de 2026",
+    "lastUpdated": "Última actualización: agosto de 2026",
     "intro": "Tu privacidad importa. Cada aplicación que desarrollo está diseñada pensando en tu privacidad. No recopilo ni almaceno datos personales sin tu consentimiento.",
     "dataCollection": {
       "title": "Recopilación de datos",
@@ -198,8 +222,8 @@
       "body": "Las compras dentro de la app se procesan a través de Apple. Puedo verificar el estado de tu compra mediante la validación de recibos de Apple, pero no tengo acceso a tus datos de pago."
     },
     "thirdParty": {
-      "title": "Tus datos permanecen en tu dispositivo",
-      "body": "No opero ningún servidor backend para la recopilación de datos. Tus datos permanecen en tu dispositivo a menos que tú decidas lo contrario. Algunas aplicaciones pueden conectarse a servicios de terceros, pero solo cuando tú lo actives."
+      "title": "Dispositivo, iCloud y servicios de terceros",
+      "body": "No opero servidores backend que recopilen datos de las aplicaciones. Tus datos permanecen en el dispositivo de forma predeterminada. Si activas la sincronización o el uso compartido de iCloud, los datos correspondientes se almacenan y transmiten mediante Apple iCloud, y las personas invitadas pueden acceder a los registros compartidos. Algunas aplicaciones solo se conectan a servicios de terceros cuando tú los eliges y configuras."
     },
     "analytics": {
       "title": "Análisis y seguimiento",

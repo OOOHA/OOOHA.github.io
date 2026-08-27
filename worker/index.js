@@ -27,6 +27,10 @@ const APP_CONFIG = {
     name: "AGD Remote",
     issueLabel: "AGD Remote",
   },
+  money: {
+    name: "Money",
+    issueLabel: "Money",
+  },
 };
 
 const VALID_TYPES = ["bug", "feature", "job-offer"];

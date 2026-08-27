@@ -142,6 +142,30 @@
       "step3": "Customize your filters and rules to match your privacy preferences."
     }
   },
+  "money": {
+    "name": "Money",
+    "tagline": "Simple finances, shared privately",
+    "description": "A clean expense tracker with no developer-operated server. Your financial data stays on your device unless you choose iCloud sync or collaboration.",
+    "features": {
+      "privacy": {
+        "title": "Private by Design",
+        "description": "No account and no developer-operated server. Your records stay on your device, or in your iCloud account when you enable sync."
+      },
+      "collaboration": {
+        "title": "Shared Ledgers",
+        "description": "Invite people to an iCloud shared ledger and keep household, travel, or group expenses up to date together."
+      },
+      "tracking": {
+        "title": "Simple Tracking",
+        "description": "Record income and expenses in a calm, minimal interface designed for everyday use."
+      }
+    },
+    "guide": {
+      "step1": "Create a ledger, then add your income and expenses as they happen.",
+      "step2": "Enable iCloud sync if you want your records available across your Apple devices.",
+      "step3": "Share a ledger through iCloud when you want to track money together with other people."
+    }
+  },
   "home": {
     "hero": {
       "title": "Apps crafted with care",
@@ -187,7 +211,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: March 2026",
+    "lastUpdated": "Last updated: August 2026",
     "intro": "Your privacy matters. Every app I build is designed with your privacy in mind. I do not collect or store personal data without your consent.",
     "dataCollection": {
       "title": "Data Collection",
@@ -198,8 +222,8 @@
       "body": "In-app purchases are processed through Apple. I may verify your purchase status via Apple's receipt validation, but I do not have access to your payment details."
     },
     "thirdParty": {
-      "title": "Your Data Stays on Your Device",
-      "body": "I do not run any backend servers for data collection. Your data stays on your device unless you choose otherwise. Some apps may connect to third-party services, but only when you actively opt in."
+      "title": "Device, iCloud & Third-Party Services",
+      "body": "I do not operate backend servers that collect app data. Your data stays on your device by default. If you enable iCloud sync or sharing, relevant data is stored and transmitted through Apple iCloud, and people you invite can access shared records. Some apps connect to third-party services only when you choose and configure them."
     },
     "analytics": {
       "title": "Analytics & Tracking",

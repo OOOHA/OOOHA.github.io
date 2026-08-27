@@ -6,6 +6,7 @@ import MoziiPage from "./pages/apps/MoziiPage";
 import MapMemoryPage from "./pages/apps/MapMemoryPage";
 import GPhonesPage from "./pages/apps/GPhonesPage";
 import AdGuardDNSPage from "./pages/apps/AdGuardDNSPage";
+import MoneyPage from "./pages/apps/MoneyPage";
 import AboutPage from "./pages/AboutPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/map-memory" element={<MapMemoryPage />} />
             <Route path="/gphones" element={<GPhonesPage />} />
             <Route path="/adguard-dns" element={<AdGuardDNSPage />} />
+            <Route path="/money" element={<MoneyPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="*" element={<NotFoundPage />} />
