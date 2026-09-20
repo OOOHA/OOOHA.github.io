@@ -7,15 +7,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Claude Code
+# Local assistant instructions and settings
 CLAUDE.md
 .claude/
 AGENTS.md
+
+# Local development manuals
+/docs/
+
+# Local environment and Worker secrets/cache
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.wrangler/
+
+# Generated test and inspection output (keep source tests and app assets)
+/coverage/
+/playwright-report/
+/test-results/
+/screenshots/
+/tmp/
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*

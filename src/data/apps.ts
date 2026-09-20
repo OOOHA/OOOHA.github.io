@@ -28,19 +28,17 @@ export interface AppData {
   taglineKey: string;
   descriptionKey: string;
   color: string;
-  colorLight: string;
   gradient: string;
   icon: LucideIcon;
   // App Store URL — when set, shows the "Download on the App Store" badge
   appStoreUrl?: string;
-  // Path to custom app icon in public/icons/ (e.g. "/icons/mozii.png")
+  // Path to custom app icon in public/icons/ (e.g. "/icons/mozii-light.png")
   // Falls back to Lucide icon if not provided or image fails to load
   iconPath?: string;
   // Optional dark mode variant of the icon
   iconPathDark?: string;
   features: AppFeature[];
   guideSteps: string[];
-  issueLabels: string[];
 }
 
 // App definitions
@@ -53,7 +51,6 @@ export const apps: AppData[] = [
     taglineKey: "mozii.tagline",       // → locales/{lang}/common.json → mozii.tagline
     descriptionKey: "mozii.description",
     color: "var(--color-mozii)",
-    colorLight: "var(--color-mozii-light)",
     gradient: "from-violet-500 to-purple-600",
     icon: Music,
     appStoreUrl: "https://apps.apple.com/us/app/mozii-local-music-player/id6759807227",
@@ -69,7 +66,6 @@ export const apps: AppData[] = [
       "mozii.guide.step2",
       "mozii.guide.step3",
     ],
-    issueLabels: ["mozii"],
   },
   {
     id: "map-memory",
@@ -77,7 +73,6 @@ export const apps: AppData[] = [
     taglineKey: "mapMemory.tagline",
     descriptionKey: "mapMemory.description",
     color: "var(--color-mapmemory)",
-    colorLight: "var(--color-mapmemory-light)",
     gradient: "from-sky-500 to-cyan-500",
     icon: MapPin,
     appStoreUrl: "https://apps.apple.com/us/app/map-memory-map-timeline/id6759832315",
@@ -93,7 +88,6 @@ export const apps: AppData[] = [
       "mapMemory.guide.step2",
       "mapMemory.guide.step3",
     ],
-    issueLabels: ["map-memory"],
   },
   {
     id: "gphones",
@@ -101,7 +95,6 @@ export const apps: AppData[] = [
     taglineKey: "gphones.tagline",
     descriptionKey: "gphones.description",
     color: "var(--color-gphones)",
-    colorLight: "var(--color-gphones-light)",
     gradient: "from-emerald-500 to-teal-500",
     icon: Gauge,
     appStoreUrl: "https://apps.apple.com/us/app/gphones/id6760122780",
@@ -117,7 +110,6 @@ export const apps: AppData[] = [
       "gphones.guide.step2",
       "gphones.guide.step3",
     ],
-    issueLabels: ["gphones"],
   },
   {
     id: "adguard-dns",
@@ -125,7 +117,6 @@ export const apps: AppData[] = [
     taglineKey: "adguardDns.tagline",
     descriptionKey: "adguardDns.description",
     color: "var(--color-adguard)",
-    colorLight: "var(--color-adguard-light)",
     gradient: "from-blue-400 to-blue-600",
     icon: Shield,
     appStoreUrl: "https://apps.apple.com/us/app/agd-remote/id6760930980",
@@ -141,7 +132,6 @@ export const apps: AppData[] = [
       "adguardDns.guide.step2",
       "adguardDns.guide.step3",
     ],
-    issueLabels: ["AGD Remote"],
   },
   {
     id: "money",
@@ -149,7 +139,6 @@ export const apps: AppData[] = [
     taglineKey: "money.tagline",
     descriptionKey: "money.description",
     color: "var(--color-money)",
-    colorLight: "var(--color-money-light)",
     gradient: "from-indigo-500 to-violet-600",
     icon: Wallet,
     iconPath: "/icons/money-light.png",
@@ -164,7 +153,6 @@ export const apps: AppData[] = [
       "money.guide.step2",
       "money.guide.step3",
     ],
-    issueLabels: ["Money"],
   },
 ];
 
