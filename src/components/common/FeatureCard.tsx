@@ -12,7 +12,7 @@ interface FeatureCardProps {
 export default function FeatureCard({ icon: Icon, title, description, color, delay = 0 }: FeatureCardProps) {
   return (
     <ScrollReveal delay={delay}>
-      <div className="p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 group">
+      <div className="h-full p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 group">
         <div
           className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
           style={{ backgroundColor: `${color}20` }}

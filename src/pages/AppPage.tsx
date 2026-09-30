@@ -165,7 +165,7 @@ export default function AppPage({ app }: AppPageProps) {
             {t("features")}
           </h2>
         </ScrollReveal>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:auto-rows-fr sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {app.features.map((feature, index) => (
             <FeatureCard
               key={feature.titleKey}

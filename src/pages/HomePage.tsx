@@ -23,13 +23,13 @@ export default function HomePage() {
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:auto-rows-fr sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {apps.map((app, index) => {
             return (
               <ScrollReveal key={app.id} delay={index * 0.15}>
                 <Link
                   to={`/${app.id}`}
-                  className="block p-8 rounded-3xl bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 group"
+                  className="flex h-full flex-col items-start p-8 rounded-3xl bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 group"
                 >
                   <AppIcon
                     iconPath={app.iconPath}
@@ -45,7 +45,7 @@ export default function HomePage() {
                   <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
                     {t(app.taglineKey)}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm font-medium group-hover:gap-2 transition-all"
+                  <span className="mt-auto inline-flex items-center gap-1 text-sm font-medium group-hover:gap-2 transition-all"
                     style={{ color: app.color }}
                   >
                     {t("learnMore")}
