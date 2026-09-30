@@ -6,7 +6,7 @@ iOS apps built for simplicity and daily use.
 
 ## Apps
 
-**mozii** — Play your music files with style. A file-based music player with real-time lyrics translation, animated lyrics, and deep customization options, all wrapped in a clean, minimal design.
+**Mozii** — Play your music files with style. A file-based music player with real-time lyrics translation, animated lyrics, and deep customization options, all wrapped in a clean, minimal design.
 
 **Map Memory** — Remember every place you've been. Automatically records your location history as a personal timeline, with all data stored privately on your device.
 
@@ -14,4 +14,4 @@ iOS apps built for simplicity and daily use.
 
 **AGD Remote** — Manage AdGuard DNS settings, query logs, and filtering rules from your iPhone.
 
-**Money** — A simple, private expense tracker with no developer-operated server, optional iCloud sync, and shared ledgers for collaborative tracking.
+**SaBee** — A simple, private expense tracker with no developer-operated server, optional iCloud sync, and shared ledgers for collaborative tracking.

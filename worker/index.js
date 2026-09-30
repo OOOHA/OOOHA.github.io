@@ -12,7 +12,7 @@ const ALLOWED_ORIGINS = [
 
 const APP_CONFIG = {
   mozii: {
-    name: "mozii",
+    name: "Mozii",
     issueLabel: "mozii",
   },
   "map-memory": {
@@ -28,7 +28,7 @@ const APP_CONFIG = {
     issueLabel: "AGD Remote",
   },
   money: {
-    name: "Money",
+    name: "SaBee",
     issueLabel: "Money",
   },
 };

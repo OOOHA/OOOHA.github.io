@@ -47,7 +47,7 @@
   "guide": "Anleitung",
   "learnMore": "Mehr erfahren",
   "mozii": {
-    "name": "mozii",
+    "name": "Mozii",
     "tagline": "Spiele deine Musikdateien mit Stil",
     "description": "Ein dateibasierter Musikplayer mit Liedtextübersetzung, animierten Liedtexten und endlosen Anpassungsmöglichkeiten — alles in einem klaren, minimalistischen Design.",
     "features": {
@@ -65,7 +65,7 @@
       }
     },
     "guide": {
-      "step1": "Füge deine Musikdateien zu mozii hinzu und durchstöbere deine Bibliothek.",
+      "step1": "Füge deine Musikdateien zu Mozii hinzu und durchstöbere deine Bibliothek.",
       "step2": "Tippe auf einen Titel zum Abspielen und genieße animierte Liedtexte mit Übersetzungsunterstützung.",
       "step3": "Erkunde die Einstellungen, um die Oberfläche und Wiedergabe nach deinem Geschmack anzupassen."
     }
@@ -143,7 +143,7 @@
     }
   },
   "money": {
-    "name": "Money",
+    "name": "SaBee",
     "tagline": "Finanzen einfach und privat gemeinsam verwalten",
     "description": "Eine übersichtliche Ausgaben-App ohne vom Entwickler betriebenen Server. Deine Finanzdaten bleiben auf deinem Gerät, solange du iCloud-Synchronisierung oder Zusammenarbeit nicht aktivierst.",
     "features": {

@@ -9,11 +9,11 @@ body:
       label: App
       description: Which app is this bug related to?
       options:
-        - mozii
+        - Mozii
         - Map Memory
         - GPhones
         - AGD Remote
-        - Money
+        - SaBee
     validations:
       required: true
   - type: input

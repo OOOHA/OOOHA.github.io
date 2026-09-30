@@ -47,7 +47,7 @@
   "guide": "Cómo usar",
   "learnMore": "Más información",
   "mozii": {
-    "name": "mozii",
+    "name": "Mozii",
     "tagline": "Reproduce tus archivos de música con estilo",
     "description": "Un reproductor de música basado en archivos con traducción de letras, letras animadas y personalización infinita — todo envuelto en un diseño limpio y minimalista.",
     "features": {
@@ -65,7 +65,7 @@
       }
     },
     "guide": {
-      "step1": "Agrega tus archivos de música a mozii y comienza a explorar tu biblioteca.",
+      "step1": "Agrega tus archivos de música a Mozii y comienza a explorar tu biblioteca.",
       "step2": "Toca una pista para reproducirla y disfruta de las letras animadas con soporte de traducción.",
       "step3": "Explora los ajustes para personalizar la interfaz y reproducción a tu gusto."
     }
@@ -143,7 +143,7 @@
     }
   },
   "money": {
-    "name": "Money",
+    "name": "SaBee",
     "tagline": "Finanzas sencillas, compartidas en privado",
     "description": "Un registro de gastos sencillo y sin servidores operados por el desarrollador. Tus datos financieros permanecen en el dispositivo salvo que actives la sincronización o colaboración mediante iCloud.",
     "features": {

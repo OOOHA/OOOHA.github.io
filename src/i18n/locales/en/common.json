@@ -47,7 +47,7 @@
   "guide": "How to Use",
   "learnMore": "Learn More",
   "mozii": {
-    "name": "mozii",
+    "name": "Mozii",
     "tagline": "Play your music files with style",
     "description": "A file-based music player with lyrics translation, animated lyrics, and endless customization — all wrapped in a clean, minimal design.",
     "features": {
@@ -65,7 +65,7 @@
       }
     },
     "guide": {
-      "step1": "Add your music files to mozii and start browsing your library.",
+      "step1": "Add your music files to Mozii and start browsing your library.",
       "step2": "Tap a track to play and enjoy animated lyrics with translation support.",
       "step3": "Explore settings to customize the interface and playback to your liking."
     }
@@ -143,7 +143,7 @@
     }
   },
   "money": {
-    "name": "Money",
+    "name": "SaBee",
     "tagline": "Simple finances, shared privately",
     "description": "A clean expense tracker with no developer-operated server. Your financial data stays on your device unless you choose iCloud sync or collaboration.",
     "features": {
