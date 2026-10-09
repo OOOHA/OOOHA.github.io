@@ -80,12 +80,11 @@ export default function AppPage({ app }: AppPageProps) {
             background: `radial-gradient(ellipse at center top, ${app.color}, transparent 70%)`,
           }}
         />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center"
           >
             <AppIcon
               iconPath={app.iconPath}
@@ -101,21 +100,22 @@ export default function AppPage({ app }: AppPageProps) {
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
               {t(app.taglineKey)}
             </p>
-            {app.appStoreUrl && (
-              <a
-                href={app.appStoreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-8"
-              >
-                <img
-                  src="/icons/app-store-badge.svg"
-                  alt={t("appStore")}
-                  className="h-12 mx-auto hover:opacity-80 transition-opacity"
-                />
-              </a>
-            )}
           </motion.div>
+          {/* Keep Apple's badge outside the hero animation and preserve its artwork. */}
+          {app.appStoreUrl && (
+            <a
+              href={app.appStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-8"
+            >
+              <img
+                src="/icons/app-store-badge.svg"
+                alt={t("appStore")}
+                className="h-12 mx-auto"
+              />
+            </a>
+          )}
         </div>
       </section>
 

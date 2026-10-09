@@ -30,7 +30,7 @@ export interface AppData {
   color: string;
   gradient: string;
   icon: LucideIcon;
-  // App Store URL — when set, shows the "Download on the App Store" badge
+  // Country-neutral App Store URL — when set, shows the download badge
   appStoreUrl?: string;
   // Path to custom app icon in public/icons/ (e.g. "/icons/mozii-light.png")
   // Falls back to Lucide icon if not provided or image fails to load
@@ -53,7 +53,7 @@ export const apps: AppData[] = [
     color: "var(--color-mozii)",
     gradient: "from-violet-500 to-purple-600",
     icon: Music,
-    appStoreUrl: "https://apps.apple.com/us/app/mozii-local-music-player/id6759807227",
+    appStoreUrl: "https://apps.apple.com/app/mozii-local-music-player/id6759807227",
     iconPath: "/icons/mozii-light.png",
     iconPathDark: "/icons/mozii-dark.png",
     features: [
@@ -75,7 +75,7 @@ export const apps: AppData[] = [
     color: "var(--color-mapmemory)",
     gradient: "from-sky-500 to-cyan-500",
     icon: MapPin,
-    appStoreUrl: "https://apps.apple.com/us/app/map-memory-map-timeline/id6759832315",
+    appStoreUrl: "https://apps.apple.com/app/map-memory-map-timeline/id6759832315",
     iconPath: "/icons/map-memory-light.png",
     iconPathDark: "/icons/map-memory-dark.png",
     features: [
@@ -97,7 +97,7 @@ export const apps: AppData[] = [
     color: "var(--color-gphones)",
     gradient: "from-emerald-500 to-teal-500",
     icon: Gauge,
-    appStoreUrl: "https://apps.apple.com/us/app/gphones/id6760122780",
+    appStoreUrl: "https://apps.apple.com/app/gphones/id6760122780",
     iconPath: "/icons/gphones-light.png",
     iconPathDark: "/icons/gphones-dark.png",
     features: [
@@ -119,7 +119,7 @@ export const apps: AppData[] = [
     color: "var(--color-adguard)",
     gradient: "from-blue-400 to-blue-600",
     icon: Shield,
-    appStoreUrl: "https://apps.apple.com/us/app/agd-remote/id6760930980",
+    appStoreUrl: "https://apps.apple.com/app/agd-remote/id6760930980",
     iconPath: "/icons/AdGuardDNSDashboard_Light.png",
     iconPathDark: "/icons/AdGuardDNSDashboard_Dark.png",
     features: [
@@ -141,6 +141,7 @@ export const apps: AppData[] = [
     color: "var(--color-money)",
     gradient: "from-indigo-500 to-violet-600",
     icon: Wallet,
+    appStoreUrl: "https://apps.apple.com/app/sabeee/id6804706844",
     iconPath: "/icons/money-light.png",
     iconPathDark: "/icons/money-dark.png",
     features: [
