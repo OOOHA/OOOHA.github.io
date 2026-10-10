@@ -8,6 +8,7 @@ interface FeedbackFormProps {
   appId: string;
   appName: string;
   color: string;
+  surfaceColor?: string;
   isOpen: boolean;
   onClose: () => void;
   defaultType: "bug" | "feature";
@@ -54,6 +55,7 @@ export default function FeedbackForm({
   appId,
   appName,
   color,
+  surfaceColor = color,
   isOpen,
   onClose,
   defaultType,
@@ -185,7 +187,7 @@ export default function FeedbackForm({
             {/* Header */}
             <div
               className="px-6 py-4 flex items-center justify-between text-white flex-shrink-0"
-              style={{ backgroundColor: color }}
+              style={{ backgroundColor: surfaceColor }}
             >
               <h3 className="text-lg font-semibold">
                 {t("feedback.title")} — {appName}
@@ -223,7 +225,7 @@ export default function FeedbackForm({
                     <button
                       onClick={handleClose}
                       className="px-6 py-2.5 rounded-xl text-white font-medium text-sm transition-opacity hover:opacity-90"
-                      style={{ backgroundColor: color }}
+                      style={{ backgroundColor: surfaceColor }}
                     >
                       {t("feedback.formClose")}
                     </button>
@@ -365,7 +367,7 @@ export default function FeedbackForm({
                     type="submit"
                     disabled={status === "submitting" || !title.trim() || !description.trim()}
                     className="w-full flex items-center justify-center gap-2 py-3 px-6 rounded-xl text-white font-medium transition-all hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ backgroundColor: color }}
+                    style={{ backgroundColor: surfaceColor }}
                   >
                     {status === "submitting" ? (
                       <>

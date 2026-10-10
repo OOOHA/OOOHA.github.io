@@ -15,3 +15,5 @@ iOS apps built for simplicity and daily use.
 **AGD Remote** — Manage AdGuard DNS settings, query logs, and filtering rules from your iPhone.
 
 **SaBee** — A simple, private expense tracker with no developer-operated server, optional iCloud sync, and shared ledgers for collaborative tracking.
+
+**Wiregram** *(coming soon)* — A minimal RSS reader with article translation and Apple Intelligence summaries, outlines, and questions about what you read. Apple Intelligence features require a supported device with Apple Intelligence enabled; availability varies by language and region.

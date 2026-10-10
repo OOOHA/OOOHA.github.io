@@ -10,6 +10,12 @@
   --color-gphones: #10b981;
   --color-adguard: #3C81F6;
   --color-money: #6758e8;
+  --color-wiregram-surface: #64748b;
+  --color-wiregram: var(--color-wiregram-surface);
+}
+
+.dark {
+  --color-wiregram: #94a3b8;
 }
 
 html {

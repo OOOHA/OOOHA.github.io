@@ -21,6 +21,7 @@ export default function AppPage({ app }: AppPageProps) {
   const [feedbackType, setFeedbackType] = useState<"bug" | "feature">("bug");
   const [activeSection, setActiveSection] = useState("");
   const navRef = useRef<HTMLElement>(null);
+  const surfaceColor = app.surfaceColor ?? app.color;
 
   const openBugReport = () => {
     setFeedbackType("bug");
@@ -116,6 +117,11 @@ export default function AppPage({ app }: AppPageProps) {
               />
             </a>
           )}
+          {app.comingSoon && !app.appStoreUrl && (
+            <p className="inline-block mt-8 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-600 dark:text-gray-300">
+              {t("comingSoon")}
+            </p>
+          )}
         </div>
       </section>
 
@@ -124,7 +130,7 @@ export default function AppPage({ app }: AppPageProps) {
         ref={navRef}
         className="sticky top-[65px] z-40 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-800/50"
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 flex justify-center gap-8 py-3">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 flex justify-center gap-3 sm:gap-8 py-3">
           {SECTION_IDS.map((id) => (
             <button
               key={id}
@@ -177,6 +183,11 @@ export default function AppPage({ app }: AppPageProps) {
             />
           ))}
         </div>
+        {app.featureNoteKey && (
+          <p className="mt-6 text-sm text-center text-gray-500 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            {t(app.featureNoteKey)}
+          </p>
+        )}
       </section>
 
       {/* Usage Guide */}
@@ -192,7 +203,7 @@ export default function AppPage({ app }: AppPageProps) {
               <div className="flex gap-5 items-start p-6 rounded-2xl bg-gray-50 dark:bg-gray-900">
                 <div
                   className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center text-white font-bold text-sm"
-                  style={{ backgroundColor: app.color }}
+                  style={{ backgroundColor: surfaceColor }}
                 >
                   {index + 1}
                 </div>
@@ -276,6 +287,7 @@ export default function AppPage({ app }: AppPageProps) {
         appId={app.id}
         appName={t(app.nameKey)}
         color={app.color}
+        surfaceColor={surfaceColor}
         isOpen={feedbackOpen}
         onClose={() => setFeedbackOpen(false)}
         defaultType={feedbackType}

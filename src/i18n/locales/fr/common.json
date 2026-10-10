@@ -43,6 +43,7 @@
     "viewOnGithub": "Voir sur GitHub"
   },
   "appStore": "Télécharger sur l'App Store",
+  "comingSoon": "Bientôt disponible",
   "features": "Fonctionnalités",
   "guide": "Guide d'utilisation",
   "learnMore": "En savoir plus",
@@ -166,6 +167,31 @@
       "step3": "Partagez un compte via iCloud lorsque vous souhaitez suivre les dépenses à plusieurs."
     }
   },
+  "wiregram": {
+    "name": "Wiregram",
+    "tagline": "Une façon plus simple de lire vos flux",
+    "description": "Un lecteur RSS minimaliste pour suivre les sources qui vous intéressent. Traduisez des articles et utilisez Apple Intelligence pour créer des résumés, structurer les points clés et poser des questions sur vos lectures.",
+    "features": {
+      "reading": {
+        "title": "Place à la lecture",
+        "description": "Suivez vos flux RSS et lisez vos articles dans une interface épurée et minimaliste qui vous aide à vous concentrer sur le contenu."
+      },
+      "translation": {
+        "title": "Traduction d’articles",
+        "description": "Traduisez des articles pour découvrir des points de vue et des récits dans d’autres langues."
+      },
+      "intelligence": {
+        "title": "Apple Intelligence",
+        "description": "Créez des résumés, organisez les points clés dans un plan et posez des questions sur les articles avec Apple Intelligence."
+      }
+    },
+    "guide": {
+      "step1": "Ajoutez à Wiregram les flux RSS que vous souhaitez suivre.",
+      "step2": "Ouvrez un article pour le lire et traduisez-le si nécessaire.",
+      "step3": "Utilisez Apple Intelligence pour résumer un article, en créer un plan ou poser des questions sur son contenu."
+    },
+    "intelligenceAvailability": "Les fonctionnalités Apple Intelligence nécessitent un appareil compatible sur lequel Apple Intelligence est activé. Leur disponibilité varie selon la langue et la région."
+  },
   "home": {
     "hero": {
       "title": "Des applications conçues avec soin",
@@ -211,7 +237,7 @@
   },
   "privacy": {
     "title": "Politique de confidentialité",
-    "lastUpdated": "Dernière mise à jour : août 2026",
+    "lastUpdated": "Dernière mise à jour : 10 octobre 2026",
     "intro": "Votre vie privée compte. Chaque application que je développe est conçue en pensant à votre confidentialité. Je ne collecte ni ne stocke de données personnelles sans votre consentement.",
     "dataCollection": {
       "title": "Collecte de données",
@@ -224,6 +250,10 @@
     "thirdParty": {
       "title": "Appareil, iCloud et services tiers",
       "body": "Je n'exploite aucun serveur backend collectant les données des applications. Vos données restent par défaut sur votre appareil. Si vous activez la synchronisation ou le partage iCloud, les données concernées sont stockées et transmises via Apple iCloud, et les personnes invitées peuvent accéder aux entrées partagées. Certaines applications se connectent à des services tiers uniquement lorsque vous les choisissez et les configurez."
+    },
+    "wiregram": {
+      "title": "Wiregram",
+      "body": "Wiregram récupère les flux RSS et le contenu des articles auprès des sources que vous choisissez. Les fonctions de traduction et d’IA utilisent les fonctionnalités système d’Apple. Je n’exploite aucun serveur backend pour Wiregram et n’utilise aucun outil d’analyse ou de suivi dans l’application."
     },
     "analytics": {
       "title": "Analyse et suivi",

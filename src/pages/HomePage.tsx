@@ -39,9 +39,16 @@ export default function HomePage() {
                     size="md"
                     className="mb-6 group-hover:scale-110 transition-transform"
                   />
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                    {t(app.nameKey)}
-                  </h3>
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-2">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                      {t(app.nameKey)}
+                    </h3>
+                    {app.comingSoon && !app.appStoreUrl && (
+                      <span className="px-2.5 py-1 rounded-full bg-gray-200 dark:bg-gray-800 text-xs font-medium text-gray-600 dark:text-gray-300">
+                        {t("comingSoon")}
+                      </span>
+                    )}
+                  </div>
                   <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
                     {t(app.taglineKey)}
                   </p>

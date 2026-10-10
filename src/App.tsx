@@ -7,6 +7,7 @@ import MapMemoryPage from "./pages/apps/MapMemoryPage";
 import GPhonesPage from "./pages/apps/GPhonesPage";
 import AdGuardDNSPage from "./pages/apps/AdGuardDNSPage";
 import MoneyPage from "./pages/apps/MoneyPage";
+import WiregramPage from "./pages/apps/WiregramPage";
 import AboutPage from "./pages/AboutPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/gphones" element={<GPhonesPage />} />
             <Route path="/adguard-dns" element={<AdGuardDNSPage />} />
             <Route path="/money" element={<MoneyPage />} />
+            <Route path="/wiregram" element={<WiregramPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="*" element={<NotFoundPage />} />

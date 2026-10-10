@@ -6,11 +6,14 @@ import {
   MapPin,
   Minimize2,
   Music,
+  Newspaper,
   ReceiptText,
+  Rss,
   Settings,
   Shield,
   ShieldCheck,
   ScrollText,
+  Sparkles,
   Users,
   Wallet,
 } from "lucide-react";
@@ -28,16 +31,20 @@ export interface AppData {
   taglineKey: string;
   descriptionKey: string;
   color: string;
+  // Optional fill color for controls that use white text.
+  surfaceColor?: string;
   gradient: string;
   icon: LucideIcon;
   // Country-neutral App Store URL — when set, shows the download badge
   appStoreUrl?: string;
+  comingSoon?: boolean;
   // Path to custom app icon in public/icons/ (e.g. "/icons/mozii-light.png")
   // Falls back to Lucide icon if not provided or image fails to load
   iconPath?: string;
   // Optional dark mode variant of the icon
   iconPathDark?: string;
   features: AppFeature[];
+  featureNoteKey?: string;
   guideSteps: string[];
 }
 
@@ -153,6 +160,30 @@ export const apps: AppData[] = [
       "money.guide.step1",
       "money.guide.step2",
       "money.guide.step3",
+    ],
+  },
+  {
+    id: "wiregram",
+    nameKey: "wiregram.name",
+    taglineKey: "wiregram.tagline",
+    descriptionKey: "wiregram.description",
+    color: "var(--color-wiregram)",
+    surfaceColor: "var(--color-wiregram-surface)",
+    gradient: "from-slate-400 to-slate-600",
+    icon: Rss,
+    comingSoon: true,
+    iconPath: "/icons/Wiregram-light.png",
+    iconPathDark: "/icons/Wiregram-dark.png",
+    features: [
+      { titleKey: "wiregram.features.reading.title", descriptionKey: "wiregram.features.reading.description", icon: Newspaper },
+      { titleKey: "wiregram.features.translation.title", descriptionKey: "wiregram.features.translation.description", icon: Languages },
+      { titleKey: "wiregram.features.intelligence.title", descriptionKey: "wiregram.features.intelligence.description", icon: Sparkles },
+    ],
+    featureNoteKey: "wiregram.intelligenceAvailability",
+    guideSteps: [
+      "wiregram.guide.step1",
+      "wiregram.guide.step2",
+      "wiregram.guide.step3",
     ],
   },
 ];

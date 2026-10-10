@@ -43,6 +43,7 @@
     "viewOnGithub": "GitHub で確認"
   },
   "appStore": "App Storeからダウンロード",
+  "comingSoon": "近日公開",
   "features": "機能",
   "guide": "使い方",
   "learnMore": "詳しく見る",
@@ -166,6 +167,31 @@
       "step3": "共同で記録したい場合は、iCloudで家計簿を共有してメンバーを招待します。"
     }
   },
+  "wiregram": {
+    "name": "Wiregram",
+    "tagline": "フィードをもっとシンプルに読む",
+    "description": "気になる情報源をフォローできる、ミニマルなRSSリーダーです。記事の翻訳に加え、Apple Intelligenceで要約やアウトラインを作成したり、読んでいる内容について質問したりできます。",
+    "features": {
+      "reading": {
+        "title": "読むことに集中",
+        "description": "RSSフィードをフォローし、すっきりとしたミニマルな画面で記事の内容に集中できます。"
+      },
+      "translation": {
+        "title": "記事の翻訳",
+        "description": "記事を翻訳して、さまざまな言語の視点やストーリーに触れられます。"
+      },
+      "intelligence": {
+        "title": "Apple Intelligence",
+        "description": "Apple Intelligenceで記事を要約し、要点をアウトラインに整理したり、記事の内容について質問したりできます。"
+      }
+    },
+    "guide": {
+      "step1": "フォローしたいRSSフィードをWiregramに追加します。",
+      "step2": "記事を開いて読み、必要に応じて翻訳します。",
+      "step3": "Apple Intelligenceを使って記事の要約やアウトラインを作成したり、内容について質問したりします。"
+    },
+    "intelligenceAvailability": "Apple Intelligenceの機能を利用するには、対応デバイスでApple Intelligenceを有効にする必要があります。利用できる機能は言語や地域によって異なります。"
+  },
   "home": {
     "hero": {
       "title": "心を込めて作ったアプリ",
@@ -211,7 +237,7 @@
   },
   "privacy": {
     "title": "プライバシーポリシー",
-    "lastUpdated": "最終更新：2026年8月",
+    "lastUpdated": "最終更新：2026年10月10日",
     "intro": "あなたのプライバシーは大切です。私が開発するすべてのアプリは、プライバシーを最優先に設計されています。同意なしに個人データを収集・保存することはありません。",
     "dataCollection": {
       "title": "データ収集",
@@ -224,6 +250,10 @@
     "thirdParty": {
       "title": "デバイス、iCloud、外部サービス",
       "body": "アプリデータを収集するバックエンドサーバーは運営していません。データは標準ではデバイス内に保存されます。iCloud同期または共有を有効にすると、関連データはApple iCloudを通じて保存・転送され、招待したメンバーが共有記録にアクセスできます。一部のアプリは、ユーザーが選択して設定した場合にのみ外部サービスへ接続します。"
+    },
+    "wiregram": {
+      "title": "Wiregram",
+      "body": "Wiregramは、ユーザーが選択した情報源からRSSフィードと記事の内容を取得します。翻訳とAIの機能にはAppleのシステム機能を使用します。Wiregram用のバックエンドサーバーは運営しておらず、アプリ内で分析やトラッキングのツールも使用していません。"
     },
     "analytics": {
       "title": "分析とトラッキング",

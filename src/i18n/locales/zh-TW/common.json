@@ -43,6 +43,7 @@
     "viewOnGithub": "在 GitHub 上查看"
   },
   "appStore": "在 App Store 下載",
+  "comingSoon": "即將推出",
   "features": "功能特色",
   "guide": "使用說明",
   "learnMore": "了解更多",
@@ -166,6 +167,31 @@
       "step3": "需要一起記帳時，透過 iCloud 分享帳本並邀請其他人協作。"
     }
   },
+  "wiregram": {
+    "name": "Wiregram",
+    "tagline": "用更簡單的方式閱讀訂閱內容",
+    "description": "一款簡約的 RSS 閱讀器，讓你追蹤關心的內容來源。支援文章翻譯，並可透過 Apple Intelligence 產生摘要、整理大綱，以及針對文章內容提問。",
+    "features": {
+      "reading": {
+        "title": "專注閱讀",
+        "description": "追蹤你的 RSS 訂閱，在乾淨簡約的介面中閱讀文章，專注於內容本身。"
+      },
+      "translation": {
+        "title": "文章翻譯",
+        "description": "翻譯文章，閱讀不同語言的觀點與故事。"
+      },
+      "intelligence": {
+        "title": "Apple Intelligence",
+        "description": "透過 Apple Intelligence 產生文章摘要、將重點整理成大綱，並針對文章內容提問。"
+      }
+    },
+    "guide": {
+      "step1": "將想追蹤的 RSS 訂閱來源加入 Wiregram。",
+      "step2": "開啟文章閱讀，並在需要時使用翻譯功能。",
+      "step3": "使用 Apple Intelligence 產生文章摘要、整理大綱，或針對內容提問。"
+    },
+    "intelligenceAvailability": "Apple Intelligence 功能需要支援的裝置，並須啟用 Apple Intelligence。功能可用性因語言與地區而異。"
+  },
   "home": {
     "hero": {
       "title": "用心打造的應用程式",
@@ -211,7 +237,7 @@
   },
   "privacy": {
     "title": "隱私政策",
-    "lastUpdated": "最後更新：2026 年 8 月",
+    "lastUpdated": "最後更新：2026 年 10 月 10 日",
     "intro": "你的隱私至關重要。我開發的每一個 App 都以你的隱私為優先考量設計。未經你的同意，我不會收集或儲存個人資料。",
     "dataCollection": {
       "title": "資料收集",
@@ -224,6 +250,10 @@
     "thirdParty": {
       "title": "裝置、iCloud 與第三方服務",
       "body": "我沒有營運任何收集 App 資料的後端伺服器。資料預設留在你的裝置上；若你啟用 iCloud 同步或共享，相關資料將透過 Apple iCloud 儲存與傳輸，而你邀請的成員可以存取共享紀錄。部分 App 只有在你主動選擇並完成設定後，才會連接第三方服務。"
+    },
+    "wiregram": {
+      "title": "Wiregram",
+      "body": "Wiregram 會從你選擇的來源取得 RSS 訂閱與文章內容。翻譯與 AI 功能使用 Apple 系統功能。我沒有為 Wiregram 營運後端伺服器，也未在 App 中使用分析或追蹤工具。"
     },
     "analytics": {
       "title": "分析與追蹤",

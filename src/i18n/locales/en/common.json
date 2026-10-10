@@ -43,6 +43,7 @@
     "viewOnGithub": "View on GitHub"
   },
   "appStore": "Download on the App Store",
+  "comingSoon": "Coming soon",
   "features": "Features",
   "guide": "How to Use",
   "learnMore": "Learn More",
@@ -166,6 +167,31 @@
       "step3": "Share a ledger through iCloud when you want to track money together with other people."
     }
   },
+  "wiregram": {
+    "name": "Wiregram",
+    "tagline": "A simpler way to read your feeds",
+    "description": "A minimal RSS reader for following the sources you care about. Translate articles and use Apple Intelligence to create summaries, outline key points, and ask questions about what you read.",
+    "features": {
+      "reading": {
+        "title": "Focused Reading",
+        "description": "Follow your RSS feeds and enjoy articles in a clean, minimal interface that keeps the focus on reading."
+      },
+      "translation": {
+        "title": "Article Translation",
+        "description": "Translate articles to explore perspectives and stories in other languages."
+      },
+      "intelligence": {
+        "title": "Apple Intelligence",
+        "description": "Create summaries, organize key points into outlines, and ask questions about articles with Apple Intelligence."
+      }
+    },
+    "guide": {
+      "step1": "Add the RSS feeds you want to follow to Wiregram.",
+      "step2": "Open an article to read it, and translate it when you need to.",
+      "step3": "Use Apple Intelligence to summarize an article, create an outline, or ask questions about its content."
+    },
+    "intelligenceAvailability": "Apple Intelligence features require a supported device with Apple Intelligence enabled. Availability varies by language and region."
+  },
   "home": {
     "hero": {
       "title": "Apps crafted with care",
@@ -211,7 +237,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: August 2026",
+    "lastUpdated": "Last updated: October 10, 2026",
     "intro": "Your privacy matters. Every app I build is designed with your privacy in mind. I do not collect or store personal data without your consent.",
     "dataCollection": {
       "title": "Data Collection",
@@ -224,6 +250,10 @@
     "thirdParty": {
       "title": "Device, iCloud & Third-Party Services",
       "body": "I do not operate backend servers that collect app data. Your data stays on your device by default. If you enable iCloud sync or sharing, relevant data is stored and transmitted through Apple iCloud, and people you invite can access shared records. Some apps connect to third-party services only when you choose and configure them."
+    },
+    "wiregram": {
+      "title": "Wiregram",
+      "body": "Wiregram retrieves RSS feeds and article content from the sources you choose. Translation and AI features use Apple system capabilities. I do not operate a backend for Wiregram or use analytics or tracking in the app."
     },
     "analytics": {
       "title": "Analytics & Tracking",

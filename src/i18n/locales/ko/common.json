@@ -43,6 +43,7 @@
     "viewOnGithub": "GitHub에서 보기"
   },
   "appStore": "App Store에서 다운로드",
+  "comingSoon": "출시 예정",
   "features": "기능",
   "guide": "사용 방법",
   "learnMore": "자세히 보기",
@@ -166,6 +167,31 @@
       "step3": "함께 기록하려면 iCloud로 가계부를 공유하고 다른 사람을 초대합니다."
     }
   },
+  "wiregram": {
+    "name": "Wiregram",
+    "tagline": "피드를 더 간편하게 읽는 방법",
+    "description": "관심 있는 소식을 구독하는 간결한 RSS 리더입니다. 기사를 번역하고, Apple Intelligence로 요약과 개요를 만들거나 읽고 있는 내용에 대해 질문할 수 있습니다.",
+    "features": {
+      "reading": {
+        "title": "읽기에 집중",
+        "description": "RSS 피드를 구독하고, 깔끔하고 간결한 화면에서 기사 내용에 집중하세요."
+      },
+      "translation": {
+        "title": "기사 번역",
+        "description": "기사를 번역해 다른 언어로 쓰인 다양한 관점과 이야기를 만나보세요."
+      },
+      "intelligence": {
+        "title": "Apple Intelligence",
+        "description": "Apple Intelligence로 기사를 요약하고, 핵심 내용을 개요로 정리하거나 기사에 대해 질문하세요."
+      }
+    },
+    "guide": {
+      "step1": "구독하고 싶은 RSS 피드를 Wiregram에 추가하세요.",
+      "step2": "기사를 열어 읽고, 필요할 때 번역하세요.",
+      "step3": "Apple Intelligence로 기사를 요약하거나 개요를 만들고, 내용에 대해 질문하세요."
+    },
+    "intelligenceAvailability": "Apple Intelligence 기능을 사용하려면 지원되는 기기에서 Apple Intelligence를 켜야 합니다. 기능 제공 여부는 언어와 지역에 따라 다릅니다."
+  },
   "home": {
     "hero": {
       "title": "정성을 담아 만든 앱",
@@ -211,7 +237,7 @@
   },
   "privacy": {
     "title": "개인정보 처리방침",
-    "lastUpdated": "최종 업데이트: 2026년 8월",
+    "lastUpdated": "최종 업데이트: 2026년 10월 10일",
     "intro": "여러분의 개인정보는 소중합니다. 제가 개발하는 모든 앱은 프라이버시를 최우선으로 설계되었습니다. 동의 없이 개인 데이터를 수집하거나 저장하지 않습니다.",
     "dataCollection": {
       "title": "데이터 수집",
@@ -224,6 +250,10 @@
     "thirdParty": {
       "title": "기기, iCloud 및 외부 서비스",
       "body": "앱 데이터를 수집하는 백엔드 서버를 운영하지 않습니다. 데이터는 기본적으로 기기에 저장됩니다. iCloud 동기화 또는 공유를 켜면 관련 데이터가 Apple iCloud를 통해 저장 및 전송되며 초대한 구성원이 공유 기록에 접근할 수 있습니다. 일부 앱은 사용자가 직접 선택하고 설정한 경우에만 외부 서비스에 연결됩니다."
+    },
+    "wiregram": {
+      "title": "Wiregram",
+      "body": "Wiregram은 사용자가 선택한 출처에서 RSS 피드와 기사 내용을 가져옵니다. 번역 및 AI 기능은 Apple 시스템 기능을 사용합니다. Wiregram을 위한 백엔드 서버를 운영하지 않으며, 앱에서 분석이나 추적 도구를 사용하지 않습니다."
     },
     "analytics": {
       "title": "분석 및 추적",

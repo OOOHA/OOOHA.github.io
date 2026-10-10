@@ -31,6 +31,10 @@ const APP_CONFIG = {
     name: "SaBee",
     issueLabel: "Money",
   },
+  wiregram: {
+    name: "Wiregram",
+    issueLabel: "wiregram",
+  },
 };
 
 const VALID_TYPES = ["bug", "feature", "job-offer"];

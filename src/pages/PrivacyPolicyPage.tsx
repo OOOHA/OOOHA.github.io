@@ -8,6 +8,7 @@ export default function PrivacyPolicyPage() {
     { title: t("privacy.dataCollection.title"), body: t("privacy.dataCollection.body") },
     { title: t("privacy.inAppPurchases.title"), body: t("privacy.inAppPurchases.body") },
     { title: t("privacy.thirdParty.title"), body: t("privacy.thirdParty.body") },
+    { title: t("privacy.wiregram.title"), body: t("privacy.wiregram.body") },
     { title: t("privacy.analytics.title"), body: t("privacy.analytics.body") },
     { title: t("privacy.contact.title"), body: t("privacy.contact.body") },
   ];
@@ -19,7 +20,7 @@ export default function PrivacyPolicyPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-4">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight break-words text-gray-900 dark:text-white mb-4">
           {t("privacy.title")}
         </h1>
         <p className="text-sm text-gray-400 dark:text-gray-500 mb-12">
